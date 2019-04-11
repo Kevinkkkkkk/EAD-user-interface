@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>注册</title>
+<title>Join Zura</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -14,19 +14,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Custom Theme files -->
 <!--webfont-->
 <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min1.js"></script>
 </head>
 <body>
 <div class="header">
 	<div class="header_top">
 		<div class="container">
 			<div class="logo">
-                <li>苍溪商城</li>
+                <li>Zura Women's Clothes Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="register.html"><li>注册</li></a>
-			      <a href="login.html"><li>登陆</li></a>
-			      <a href="purchase.html"><li><span class="m_1">购物车</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <a href="register.html"><li>Sign up</li></a>
+			      <a href="login.html"><li>Sign in</li></a>
+			      <a href="purchase.html"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -34,15 +34,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="h_menu4"><!-- start h_menu4 -->
 		<div class="container">
-				<a class="toggleMenu" href="#">菜单</a>
+				<a class="toggleMenu" href="#">Menu</a>
 				<ul class="nav">
-					<li><a href="index.html" data-hover="首页">首页</a></li>
-					<li><a href="all.html" data-hover="所有商品">所有商品</a></li>
-					<li><a href="hot.html" data-hover="热销产品">热销产品</a></li>
-					<li><a href="special.html" data-hover="活动商品">活动商品</a></li>
-                    <li><a href="tuangou.html" data-hover="团购商品">团购商品</a></li>
-					<li><a href="404.html" data-hover="积分兑换">积分兑换</a></li>
-					<li><a href="contact.html" data-hover="联系我们">联系我们</a></li>
+					<li><a href="index.html" data-hover="Index">Index</a></li>
+					<li><a href="all.html" data-hover="All products">All products</a></li>
+					<li><a href="hot.html" data-hover="Hot Products">Hot Products</a></li>
+					<li><a href="special.html" data-hover="Activities">Activities</a></li>
+          <li><a href="tuangou.html" data-hover="Group Purchase">Group Purchase</a></li>
+					<li><a href="404.html" data-hover="Gift">Gift</a></li>
+					<li><a href="contact.html" data-hover="Contact Us">Contact Us</a></li>
 				 </ul>
 				 <script type="text/javascript" src="js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
@@ -54,12 +54,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  	  <form id="form1" name="form1" method="post" action="" onsubmit="return checkForm()">
 				 <div class="register-top-grid">
 					 <div>
-						<span>邮件/用户名<label>*</label></span>
-						<input type="text"> 
+						<span>Email/Username<label>*</label></span>
+						<input type="text">
 					 </div>
 					 <div>
-						 <span>手机号<label>*</label></span>
-						 <input type="text" name="phonenumber" oninput="value=value.replace(/[^\d]/g,'')"> 
+						 <span>Mobile number<label>*</label></span>
+						 <input type="text" name="phonenumber" oninput="value=value.replace(/[^\d]/g,'')">
 					 </div>
 					 </div>
 <script language="javascript" type="text/javascript">
@@ -114,13 +114,13 @@ obj.parentElement.appendChild(oDiv)
     $(document).ready(function(){
 $("#groups .input_txt").each(function(){
 var thisVal=$(this).val();
-//判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+//Determines whether the value of the text box is empty, hides the prompt if there is a value, and displays if there is no value
 if(thisVal!=""){
 $(this).siblings("span").hide();
 }else{
 $(this).siblings("span").show();
 }
-//聚焦型输入框验证 
+//Focused input box verification
 $(this).focus(function(){
 $(this).siblings("span").hide();
 }).blur(function(){
@@ -129,7 +129,7 @@ if(val!=""){
 $(this).siblings("span").hide();
 }else{
 $(this).siblings("span").show();
-} 
+}
 });
 })
 
@@ -137,12 +137,12 @@ $(this).siblings("span").show();
 </script>
 				     <div class="register-bottom-grid" name="form1">
 							 <div>
-								<span>设置密码<label>*</label></span>
-								<input name="pwd" type="password" id="pwd" onblur="checkInput(this,'密码')"/>
+								<span>Password<label>*</label></span>
+								<input name="pwd" type="password" id="pwd" onblur="checkInput(this,'password')"/>
 							 </div>
 							 <div>
-								<span>确认密码<label>*</label></span>
-								<input name="pwd2" type="password" id="pwd2" onblur="checkInput(this,'确认密码')" />
+								<span>Confirm Password<label>*</label></span>
+								<input name="pwd2" type="password" id="pwd2" onblur="checkInput(this,'confirm password')" />
 							 </div>
 							 <div class="clearfix"> </div>
 					 </div>
@@ -150,14 +150,14 @@ $(this).siblings("span").show();
 				<div>
                     <input type="checkbox" name="checkbox" checked="">
                     <i></i>
-                    <label >同意</label>
-                    <a class="news-letter" href="#">《苍溪商城服务协议》</a>
+                    <label >I have read and agree to</label>
+                    <a class="news-letter" href="#"> Zura's Conditions of Use and Privacy Policy.</a>
                 </div>
 				</form>
 				<div class="clearfix"> </div>
 				<div class="register-but">
 				   <form>
-					   <input type="submit" value="注册">
+					   <input type="submit" value="Sign up">
 					   <div class="clearfix"> </div>
 				   </form>
 				</div>
@@ -193,7 +193,7 @@ $(this).siblings("span").show();
                     <img src="images/tu1.png">
                 </li>
 			</ul>
-             
+
 		</div>
 	</div>
 </div>
