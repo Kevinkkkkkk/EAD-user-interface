@@ -92,7 +92,7 @@ checkPwdSame(obj);
 function checkPwdSame(obj){
 var msgDiv = document.getElementById(obj.id+"msg");
 var pwd = document.getElementById("pwd");
-var msg = "两次输入密码不一致，请重新输入";
+var msg = "The passwords entered twice do not match, please re-enter";
 if(obj.value!=pwd.value){
 if(msgDiv){
 msgDiv.innerHTML = msg;
