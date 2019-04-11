@@ -66,13 +66,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 function checkForm(){
 var pwd = document.getElementById("pwd");
 var pwd2 = document.getElementById("pwd2");
-checkInput(pwd,"密码");
-checkInput(pwd2,"确认密码");
+checkInput(pwd,"Password");
+checkInput(pwd2,"Confirm password");
 return false;
 }
 function checkInput(obj,title){
 var msgDiv = document.getElementById(obj.id+"msg");
-var msg = title+"不能为空";
+var msg = title+" cannot be empty";
 if(obj.value==null||obj.value==""){
 if(msgDiv){
 msgDiv.innerHTML = msg;
