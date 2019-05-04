@@ -1,3 +1,6 @@
+<?php
+require_once('includes/db.php');
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -14,19 +17,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Custom Theme files -->
 <!--webfont-->
 <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.11.1.min1.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+</script>
+<script type="text/javascript" src="js/hover_pack.js"></script>
 </head>
 <body>
 <div class="header">
 	<div class="header_top">
 		<div class="container">
 			<div class="logo">
-                <li>Zura Women's Clothes Store</li>
+                <li>Zura Women’s Online Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="register.html"><li>Sign up</li></a>
-                  <a href="#"><li>Manager Only</li></a>
-			      <a href="purchase.html"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <a href="register.php"><li>Sign up</li></a>
+			      <a href="login.php"><li>Manager Only</li></a>
+			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -34,20 +50,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="h_menu4"><!-- start h_menu4 -->
 		<div class="container">
-				<a class="toggleMenu" href="#">Menu</a>
+				<a class="toggleMenu" href="index.php">Menu</a>
 				<ul class="nav">
-					<li><a href="index.html" data-hover="Index">Index</a></li>
-					<li><a href="all.html" data-hover="All products">All products</a></li>
-					<li><a href="hot.html" data-hover="Hot Products">Hot Products</a></li>
-					<li><a href="special.html" data-hover="Activities">Activities</a></li>
-          <li><a href="tuangou.html" data-hover="Group Purchase">Group Purchase</a></li>
-					<li><a href="404.html" data-hover="Gift">Gift</a></li>
-					<li><a href="contact.html" data-hover="Contact Us">Contact Us</a></li>
+					<li><a href="index.php" data-hover="Index">Index</a></li>
+					<li><a href="all.php" data-hover="All products">All products</a></li>
+					<li><a href="hot.php" data-hover="Hot products">Hot products</a></li>
+					<li><a href="special.php" data-hover="Events">Events</a></li>
+					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
 				 <script type="text/javascript" src="js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
+</body>
 <div class="about">
   <div class="container">
          <div class="register">

@@ -1,64 +1,9 @@
+<?php
+require_once('includes/db.php');
+require_once('includes/header.php');
+?>
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>Zura Women’s Online Store</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<!--webfont-->
-<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-</script>
-<script type="text/javascript" src="js/hover_pack.js"></script>
-</head>
-<body>
-<div class="header">
-	<div class="header_top">
-		<div class="container">
-			<div class="logo">
-                <li>Zura Women’s Online Store</li>
-			</div>
-			<ul class="shopping_grid">
-			      <a href="register.html"><li>Resgister</li></a>
-			      <a href="login.html"><li>Login</li></a>
-			      <a href="purchase.html"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
-			      <div class="clearfix"> </div>
-			</ul>
-		    <div class="clearfix"> </div>
-		</div>
-	</div>
-	<div class="h_menu4"><!-- start h_menu4 -->
-		<div class="container">
-				<a class="toggleMenu" href="index.html">Menu</a>
-				<ul class="nav">
-					<li><a href="index.html" data-hover="Index">Index</a></li>
-					<li><a href="all.html" data-hover="All products">All products</a></li>
-					<li><a href="hot.html" data-hover="Hot products">Hot products</a></li>
-					<li><a href="special.html" data-hover="Events">Events</a></li>
-					<li><a href="contact.html" data-hover="Contact us">Contact us</a></li>
-				 </ul>
-				 <script type="text/javascript" src="js/nav.js"></script>
-	      </div><!-- end h_menu4 -->
-     </div>
-</div>
 <div class="slider">
 	  <div class="callbacks_container">
 	      <ul class="rslides" id="slider">
@@ -98,39 +43,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="menu_box">
 		    <h3 class="menu_head">Classification of goods</h3>
 			  <ul class="menu">
-				<li class="item1"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/> Hats</a>
-                    <ul class="cute">
-						<li class="subitem1"><a href="product.html">瑞士糕点</a></li>
-						<li class="subitem2"><a href="product.html">派</a></li>
-						<li class="subitem3"><a href="product.html">蛋糕</a></li>
-                        <li class="subitem3"><a href="product.html">面包</a></li>
-                        <li class="subitem3"><a href="product.html">沙琪玛</a></li>
+                  <?php
+                                    $query1 = "SELECT (SELECT group_concat(DISTINCT product.p_name) FROM product WHERE product.i_id = inventory.i_id) AS name, inventory.type as type ";
+                                    $query1 .= "FROM product LEFT JOIN inventory ON product.i_id = inventory.i_id GROUP BY inventory.i_id";
+                                    $result1 = mysqli_query($connection, $query1);
+                                    if (!$result1) {
+                                        die("query is wrong");
+                                            }
+                                        while ($row1 = mysqli_fetch_array($result1)) {
+                                    ?>
+                                <li class="item1"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/><?php echo $row1["type"]; ?></a>
+                                    <ul class="cute">
+						                <li class="subitem1"><a href="product.php"><?php echo $row1["name"]; ?></a></li>
 					</ul>
-				</li>
-				<li class="item2"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Coat</a>
-                    <ul class="cute">
-						<li class="subitem1"><a href="product.html">瑞士糕点</a></li>
-						<li class="subitem2"><a href="product.html">派</a></li>
-						<li class="subitem3"><a href="product.html">蛋糕</a></li>
-                        <li class="subitem3"><a href="product.html">面包</a></li>
-                        <li class="subitem3"><a href="product.html">沙琪玛</a></li>
-					</ul>
-                  </li>
-				<li class="item3"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Skirt</a>
-				</li>
-				<li class="item4"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Jeans</a>
-				</li>
-				<li class="item5"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>T-shirt</a>
-				</li>
-				<li class="item6"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Shirt</a>
-				</li>
-				<li class="item7"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Skirt</a>
-				</li>
-                  <li class="item7"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Jeans</a>
-				</li>
-                  <li class="item7"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Casual pants</a>
-				</li>
-
+                </li>
+<?php
+                                   }
+                        ?>
+                 
 			</ul>
 		</div>
 				<!--initiate accordion-->
@@ -164,7 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	   </div>
 	   <div class="col-md-9 content_right">
 	   	<div class="top_grid1">
-	      <div class="col-md-4 box_2"><a href="single.html">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -178,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-8 box_1"><a href="single.html">
+	     <div class="col-md-8 box_1"><a href="single.php">
 	       <div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo1.png" class="img-responsive" alt=""/> </div>
@@ -195,7 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     <div class="clearfix"> </div>
 	    </div>
 	    <div class="top_grid2">
-	      <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	      <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -209,7 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -223,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -240,7 +170,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     <div class="clearfix"> </div>
 	    </div>
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	 <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -254,7 +184,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -268,7 +198,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -286,7 +216,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	    </div>
 	    <h4 class="head"><span class="m_2">More</span> Products</h4>
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -300,7 +230,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	    </a> </div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	 <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -314,7 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -331,7 +261,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     <div class="clearfix"> </div>
 	    </div>
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -345,7 +275,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
@@ -359,7 +289,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>

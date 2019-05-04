@@ -87,9 +87,7 @@ this['link']['cur'] = this;
                 <li>Zura Women’s Online Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="register.html"><li>Resgister</li></a>
-			      <a href="login.html"><li>Login</li></a>
-			      <a href="purchase.html"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -97,13 +95,13 @@ this['link']['cur'] = this;
 	</div>
 	<div class="h_menu4"><!-- start h_menu4 -->
 		<div class="container">
-				<a class="toggleMenu" href="index.html">Menu</a>
+				<a class="toggleMenu" href="index.php">Menu</a>
 				<ul class="nav">
-					<li><a href="index.html" data-hover="Index">Index</a></li>
-					<li><a href="all.html" data-hover="All products">All products</a></li>
-					<li><a href="hot.html" data-hover="Hot products">Hot products</a></li>
-					<li><a href="special.html" data-hover="Events">Events</a></li>
-					<li><a href="contact.html" data-hover="Contact us">Contact us</a></li>
+					<li><a href="index.php" data-hover="Index">Index</a></li>
+					<li><a href="all.php" data-hover="All products">All products</a></li>
+					<li><a href="hot.php" data-hover="Hot products">Hot products</a></li>
+					<li><a href="special.php" data-hover="Events">Events</a></li>
+					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
 				 <script type="text/javascript" src="js/nav.js"></script>
 	      </div><!-- end h_menu4 -->

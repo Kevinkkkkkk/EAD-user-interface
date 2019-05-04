@@ -37,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <li><a href="#">Message 0</a></li>
             <li><a href="#">Log out</a></li>
             <li style="padding-left: 40%;"><a href="#">Integral 0</a></li>
-            <li><a href="order.html">My Order</a></li>
+            <li><a href="order.php">My Order</a></li>
             <li><a href="#">Help Center</a></li>
             <li><a href="#">Online Service</a></li>
         </ul>
@@ -45,13 +45,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 	<div class="h_menu4"><!-- start h_menu4 -->
 		<div class="container">
-				<a class="toggleMenu" href="index.html">Menu</a>
+				<a class="toggleMenu" href="index.php">Menu</a>
 				<ul class="nav">
-					<li><a href="index.html" data-hover="Index">Index</a></li>
-					<li><a href="all.html" data-hover="All products">All products</a></li>
-					<li><a href="hot.html" data-hover="Hot products">Hot products</a></li>
-					<li><a href="special.html" data-hover="Events">Events</a></li>
-					<li><a href="contact.html" data-hover="Contact us">Contact us</a></li>
+					<li><a href="index.php" data-hover="Index">Index</a></li>
+					<li><a href="all.php" data-hover="All products">All products</a></li>
+					<li><a href="hot.php" data-hover="Hot products">Hot products</a></li>
+					<li><a href="special.php" data-hover="Events">Events</a></li>
+					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
 				 <script type="text/javascript" src="js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -169,7 +169,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.html"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -202,8 +202,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="checkout-left">	
 				
 				<div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s">
-					<a href="all.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue to buy</a>
-                    <a href="order.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Submit orders</a>
+					<a href="all.php"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue to buy</a>
+                    <a href="order.php"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Submit orders</a>
 				</div>
 				<div class="checkout-left-basket animated wow slideInLeft" data-wow-delay=".5s">
 					<h4>Bill</h4>
