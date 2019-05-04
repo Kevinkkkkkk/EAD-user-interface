@@ -1,3 +1,6 @@
+<?php
+require_once('includes/db.php');
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -55,9 +58,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li>Zura Women’s Online Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="register.html"><li>Resgister</li></a>
-			      <a href="login.html"><li>Login</li></a>
-			      <a href="purchase.html"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <a href="register.php"><li>Resgister</li></a>
+			      <a href="login.php"><li>Login</li></a>
+			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -65,13 +68,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="h_menu4"><!-- start h_menu4 -->
 		<div class="container">
-				<a class="toggleMenu" href="index.html">Menu</a>
+				<a class="toggleMenu" href="index.php">Menu</a>
 				<ul class="nav">
-					<li><a href="index.html" data-hover="Index">Index</a></li>
-					<li><a href="all.html" data-hover="All products">All products</a></li>
-					<li><a href="hot.html" data-hover="Hot products">Hot products</a></li>
-					<li><a href="special.html" data-hover="Events">Events</a></li>
-					<li><a href="contact.html" data-hover="Contact us">Contact us</a></li>
+					<li><a href="index.php" data-hover="Index">Index</a></li>
+					<li><a href="all.php" data-hover="All products">All products</a></li>
+					<li><a href="hot.php" data-hover="Hot products">Hot products</a></li>
+					<li><a href="special.php" data-hover="Events">Events</a></li>
+					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
 				 <script type="text/javascript" src="js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
@@ -381,36 +384,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       </div> 
 	</div>
 </div>
-<div class="footer_bg">
-</div>
-<div class="footer">
-	<div class="container">
-		<div class="col-md-3 f_grid1" style="text-align: right;">
-			<h3><a href="#">Shopping guide</a></h3>
-			<p><a href="#">Newbie guide</a></p>
-      
-		</div>
-		<div class="col-md-3 f_grid1 f_grid1" style="text-align: center;">
-			<h3><a href="#">Choose delivery address</a></h3>
-			<ul class="social">
-				<li><a href="#"><p class="m_3">Shipping instructions</p><div class="clearfix"> </div></a></li>
-			    <li><a href="#"><p class="m_3">Shipping instructions</p><div class="clearfix"> </div></a></li>
-				<li><a href="#"><p class="m_3">Method of payment</p><div class="clearfix"> </div></a></li>
-				<li><a href="#"><p class="m_3">Description of payment method</p><div class="clearfix"> </div></a></li>
-			</ul>
-		</div>
-		<div class="col-md-6 f_grid3">
-			<h3><a href="#">After-sales service</a></h3>
-			<ul class="list">
-				<li><p><a href="#">Return instructions</a></p></li>
-				<li><p><a href="#">Exchange policy</a></p></li>
-			</ul>
-            <ul class="list1">
-				
-			</ul>
-             
-		</div>
-	</div>
-</div>
-</body>
-</html>		
+<?php
+    require_once('includes/footer.php');
+?>
+</body>	
+</html>
