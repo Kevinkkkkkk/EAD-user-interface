@@ -261,145 +261,342 @@ require_once('includes/header.php');
 	     <div class="clearfix"> </div>
 	    </div>
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
-	     	<div class="grid_1">
-	     	 <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
-	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
-	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
-	     	  		<div class="clearfix"> </div>
-	     	  	</ul>
-	     	  </div>
-	     	</div>
-	     </a></div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
+         <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'longsleev001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
 	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+            	      <div class="col-md-4 box_2"><a href="single.php">
+	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'coat001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
+	     	  <div class="b-link-stroke b-animate-go  thickbox">
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+	     	  <div class="grid_2">
+	     	  	<p><?php echo $row["p_name"] ?></p>
+	     	  	<ul class="grid_2-bottom">
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
+	     	  		<div class="clearfix"> </div>
+	     	  	</ul>
+	     	  </div>
+	     	</div>
+	     </a></div>
+            <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+                     <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'skirt003'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
 	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
 	     </a></div>
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	     <div class="clearfix"> </div>
 	    </div>
 	    <h4 class="head"><span class="m_2">More</span> Products</h4>
-	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	    <div class="top_grid1">
+         <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'longsleev001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
-	     	  		<div class="clearfix"> </div>
-	     	  	</ul>
-	     	  </div>
-	     	</div>
-	    </a> </div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
-	     	<div class="grid_1">
-	     	 <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
-	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
-	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
 	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'dress001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
 	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
 	     </a></div>
+            <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+                     <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'skirt003'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
+	     	<div class="grid_1">
+	     	  <div class="b-link-stroke b-animate-go  thickbox">
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+	     	  <div class="grid_2">
+	     	  	<p><?php echo $row["p_name"] ?></p>
+	     	  	<ul class="grid_2-bottom">
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
+	     	  		<div class="clearfix"> </div>
+	     	  	</ul>
+	     	  </div>
+	     	</div>
+	     </a></div>
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	     <div class="clearfix"> </div>
 	    </div>
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+         <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'longsleev001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
 	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
 	     </a></div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'dress001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
 	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+            <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+                     <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'skirt003'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
 	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
 	     </a></div>
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	     <div class="clearfix"> </div>
 	    </div>
-       </div>
-	  </div>
-	</div>
-</div>
+	    <div class="top_grid2">
+         <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'longsleev001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
+	     	<div class="grid_1">
+	     	  <div class="b-link-stroke b-animate-go  thickbox">
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+	     	  <div class="grid_2">
+	     	  	<p><?php echo $row["p_name"] ?></p>
+	     	  	<ul class="grid_2-bottom">
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
+	     	  		<div class="clearfix"> </div>
+	     	  	</ul>
+	     	  </div>
+	     	</div>
+	     </a></div>
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+            	      <div class="col-md-4 box_2"><a href="single.php">
+	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'coat001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
+	     	  <div class="b-link-stroke b-animate-go  thickbox">
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+	     	  <div class="grid_2">
+	     	  	<p><?php echo $row["p_name"] ?></p>
+	     	  	<ul class="grid_2-bottom">
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
+	     	  		<div class="clearfix"> </div>
+	     	  	</ul>
+	     	  </div>
+	     	</div>
+	     </a></div>
+            <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+                     <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'skirt003'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>
+	      <div class="col-md-4 box_2"><a href="single.php">
+	     	<div class="grid_1">
+	     	  <div class="b-link-stroke b-animate-go  thickbox">
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+	     	  <div class="grid_2">
+	     	  	<p><?php echo $row["p_name"] ?></p>
+	     	  	<ul class="grid_2-bottom">
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
+	     	  		<div class="clearfix"> </div>
+	     	  	</ul>
+	     	  </div>
+	     	</div>
+	     </a></div>
+                        <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+	     <div class="clearfix"> </div>
+	    </div>
 <?php
     require_once('includes/footer.php');
 ?>
