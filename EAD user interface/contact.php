@@ -20,7 +20,7 @@ require_once('includes/header.php');
 <div class="about">
  <div class="container">
      <div class="wrap" style="margin-top:20px;"><div id="control_eda1ebfe-e449-4f2c-85c6-50191aca18dd" class="control_goodscondition"><div class="condition">
-    Current Position:&nbsp;&nbsp; <a href="index.html"> Homepage </a><span>&gt;</span>
+    Current Position:&nbsp;&nbsp; <a href="index.php"> Index </a><span>&gt;</span>
 <a href="javascript:;" onclick="return false">All Products</a></div></div></div>
   <div class="singel_right">
 			     <div class="col-md-8">

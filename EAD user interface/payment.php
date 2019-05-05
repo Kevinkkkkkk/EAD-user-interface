@@ -226,7 +226,7 @@ this['link']['cur'] = this;
                             </div>
             <div class="box-ft clearfix">
                     <input type="submit" class="btn btn-primary" value="Next Step" id="payBtn" style="background-color: #ee330a;">
-                    <a href="order.html" class="btn btn-lineDakeLight">Modify Order</a>
+                    <a href="order.php" class="btn btn-lineDakeLight">Modify Order</a>
                     <span class="tip"></span>
                 </div>
             </div>

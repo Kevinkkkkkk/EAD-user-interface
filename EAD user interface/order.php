@@ -370,8 +370,8 @@
                 <input type="hidden" id="couponValue" name="Checkout[couponsValue]">
                 <div class="checkout-confirm">
                   
-                     <a href="purchase.html" class="btn btn-lineDakeLight btn-back-cart">Back to Cart</a>
-                     <input type="button" class="btn btn-primary" value="Place an order" id="checkoutToPay" onclick="location.href='payment.html'" />
+                     <a href="purchase.php" class="btn btn-lineDakeLight btn-back-cart">Back to Cart</a>
+                     <input type="button" class="btn btn-primary" value="Place an order" id="checkoutToPay" onclick="location.href='payment.php'" />
                                      </div>
             </div>
         </div>

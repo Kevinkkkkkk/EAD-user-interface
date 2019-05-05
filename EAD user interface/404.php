@@ -27,7 +27,7 @@ require_once('includes/header.php');
 	   </div>
 	   <div class="col-md-91 content_right">
             <div class="wrap" style="margin-top:20px;"><div id="control_eda1ebfe-e449-4f2c-85c6-50191aca18dd" class="control_goodscondition"><div class="condition">
-    Current Position: <a href="index.html">Index</a><span>&gt;</span>
+    Current Position: <a href="index.php">Index</a><span>&gt;</span>
 <a href="javascript:;" onclick="return false">Point Redemption</a></div></div></div>
 	    <h4 class="head"><span class="m_2">Point</span> Redemption</h4>
 	    <div class="top_grid2">

@@ -99,41 +99,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	   <div class="col-md-3 sidebar_box">
 	   	 <div class="sidebar">
 			<div class="menu_box">
-		    <h3 class="menu_head">Product Categories</h3>
+		    <h3 class="menu_head">Classification of goods</h3>
 			  <ul class="menu">
-				<li class="item1"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/> Hats</a>
-                    <ul class="cute">
-						<li class="subitem1"><a href="product.html">瑞士糕点</a></li>
-						<li class="subitem2"><a href="product.html">派</a></li>
-						<li class="subitem3"><a href="product.html">蛋糕</a></li>
-                        <li class="subitem3"><a href="product.html">面包</a></li>
-                        <li class="subitem3"><a href="product.html">沙琪玛</a></li>
+                  <?php
+                                    $query = "SELECT (SELECT group_concat(DISTINCT product.p_name) FROM product WHERE product.i_id = inventory.i_id) AS name, inventory.type as type ";
+                                    $query .= "FROM product LEFT JOIN inventory ON product.i_id = inventory.i_id GROUP BY inventory.i_id";
+                                    $result = mysqli_query($connection, $query);
+                                    if (!$result) {
+                                        die("query is wrong");
+                                            }
+                                        while ($row = mysqli_fetch_array($result)) {
+                                    ?>
+                                <li class="item1"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/><?php echo $row["type"]; ?></a>
+                                    <ul class="cute">
+						                <li class="subitem1"><a href="product.php"><?php echo $row["name"]; ?></a></li>
 					</ul>
-				</li>
-				<li class="item2"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Coat</a>
-                    <ul class="cute">
-						<li class="subitem1"><a href="product.html">瑞士糕点</a></li>
-						<li class="subitem2"><a href="product.html">派</a></li>
-						<li class="subitem3"><a href="product.html">蛋糕</a></li>
-                        <li class="subitem3"><a href="product.html">面包</a></li>
-                        <li class="subitem3"><a href="product.html">沙琪玛</a></li>
-					</ul>
-                  </li>
-				<li class="item3"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Skirt</a>
-				</li>
-				<li class="item4"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Jeans</a>
-				</li>
-				<li class="item5"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>T-shirt</a>
-				</li>
-				<li class="item6"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Shirt</a>
-				</li>
-				<li class="item7"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Skirt</a>
-				</li>
-                  <li class="item7"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Jeans</a>
-				</li>
-                  <li class="item7"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/>Casual pants</a>
-				</li>
-
+                </li>
+<?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+                 
 			</ul>
 		</div>
 				<!--initiate accordion-->
@@ -153,7 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			            $(this).next().stop(true,true).slideUp('normal');
 			        }
 			    });
-			
+
 			});
 		</script>
        </div>	
@@ -164,56 +150,54 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="grid images_3_of_2">
 						<ul id="etalage">
 							<li>
-								<a href="optionallink.html">
-									<img class="etalage_thumb_image" src='images/photo2.png' class="img-responsive" />
-									<img class="etalage_source_image" src="images/photo2.png" class="img-responsive" title="" />
+								<a href="optionallink.php">
+									<img class="etalage_thumb_image" src='images/Long%20skirt.JPG' class="img-responsive" />
+									<img class="etalage_source_image" src="images/Long%20skirt.JPG" class="img-responsive" title="" />
 								</a>
 							</li>
 							<li>
-								<img class="etalage_thumb_image" src="images/photo2.png" class="img-responsive" />
-								<img class="etalage_source_image" src="images/photo2.png" class="img-responsive" title="" />
+								<img class="etalage_thumb_image" src="images/Long%20skirt2.JPG" class="img-responsive" />
+								<img class="etalage_source_image" src="images/Long%20skirt2.JPG" class="img-responsive" title="" />
 							</li>
 							<li>
-								<img class="etalage_thumb_image" src="images/photo2.png" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/photo2.png"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="images/Long%20sleeve.JPG" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/Long%20sleeve.JPG"class="img-responsive"  />
 							</li>
 						    <li>
-								<img class="etalage_thumb_image" src="images/photo2.png" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/photo2.png"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="images/shirt.JPG" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/shirt.JPG"class="img-responsive"  />
 							</li>
 						</ul>
 						 <div class="clearfix"></div>		
 				  </div> 
 				  <div class="desc1 span_3_of_2">
-				  	<p>可比克薯片60g原味番茄味办公室休闲膨化食品批发小零食</p>
+				  	<p>Long skirt</p>
 				
 			    <div class="price_single">
-				  <span class="reducedfrom">￥99.33</span>
-				  <span class="actual">￥66.33</span><a href="#"></a>
+				  <span class="reducedfrom">$66.33</span>
+				  <span class="actual">$59.00</span><a href="#"></a>
 				</div>
                       <br/><br/><br/>
-				<form action="" method="get"> 包装规格:
-                    <br/><label><input name="Fruit" type="radio" value="" />60g x 48 </label> 
+				<form action="" method="get"> Ribbed knit skirt with an elastic waistband and an asymmetric hem.
+                    <br/>
                  
                     
                 </form> 
-                      <br/><form action="" method="get"> 商品规格:<br/>
-                    <label><input name="Fruit" type="radio" value="" />件 </label> 
-                    <label><input name="Fruit" type="radio" value="" />托</label> 
-                    
+                      <br/><form action="" method="get"> MODEL HEIGHT:
+<br/>
+                    175 CM
                 </form> 
-                     <br/> <form action="" method="get"> 味道: <br/>
-                    <label><input name="Fruit" type="radio" value="" />番茄味 </label> 
-                    <label><input name="Fruit" type="radio" value="" />原味 </label> 
-                    <label><input name="Fruit" type="radio" value="" />烧烤味</label> 
-                    <label><input name="Fruit" type="radio" value="" />香辣味 </label>
-                    <label><input name="Fruit" type="radio" value="" />牛肉味 </label> 
-                    <label><input name="Fruit" type="radio" value="" />爽口黄瓜味 </label>  
-                    <label><input name="Fruit" type="radio" value="" />鸡肉味 </label>      
+                     <br/> <form action="" method="get"> Choose a size: <br/>
+                    <label><input name="Fruit" type="radio" value="" />XS (160/62A)</label> 
+                    <label><input name="Fruit" type="radio" value="" />S (165/66A)</label> 
+                    <label><input name="Fruit" type="radio" value="" />M (170/70A)</label> 
+                    <label><input name="Fruit" type="radio" value="" />L (175/78A)</label>
+                      <br/>
+                    <a href="contact.php" data-hover="All products">Don't have your own size?  Contact us!</a>
                 </form> 
 				<div class="quantity_box">
 					<ul class="product-qty">
-					   <span>数量：</span>
+					   <span>Amonut:</span>
 					   <select>
 						 <option>1</option>
 						 <option>2</option>
@@ -231,8 +215,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		   		    </ul>
 		   		    <div class="clearfix"></div>
 	   		    </div>
-			    <a href="purchase.html" title="Online Reservation" class="btn bt1 btn-primary btn-normal btn-inline " target="_self">Add to Cart</a>
-                <a href="order.html" title="Online Reservation" class="btn bt1 btn-primary btn-normal btn-inline " target="_self">Buy</a>
+			    <a href="purchase.php" title="Online Reservation" class="btn bt1 btn-primary btn-normal btn-inline " target="_self">Add to Cart</a>
+                <a href="order.php" title="Online Reservation" class="btn bt1 btn-primary btn-normal btn-inline " target="_self">Buy</a>
 			</div>
 		    <div class="clearfix"> </div>
 				</div>
@@ -251,9 +235,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="facts">
 									  <ul class="tab_list">
 									  	<li><a href="#"></a></li>
-									  	<li><a href="#"><img src="images/ke1.jpg"></a></li>
-									  	<li><a href="#"><img src="images/ke2.jpg"></a></li>
-									  	<li><a href="#"><img src="images/ke3.jpg"></a></li>
+									  	<li><a href="#"><img src="images/Long%20skirt.JPG"></a></li>
+									  	<li><a href="#"><img src="images/Long%20skirt2.JPG"></a></li>
+									  	<li><a href="#"><img src="images/Long%20sleeve.JPG"></a></li>
 									  </ul>           
 							        </div>
 							     </div>	
@@ -291,92 +275,170 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  </div>
 		<h3 class="single_head">Guess You Like</h3>	
 	    <div class="related_products">
-	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.html">
-	     	<div class="grid_1">
+	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.php">
+<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'dress001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>好吃点香脆腰果饼干礼盒装800g核桃饼杏仁饼腰果饼休闲零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><a href="single.html" title="Get It" class="btn btn-primary btn-normal btn-inline " target="_self">Buy</a></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
+                         <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	     </a></div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'skirt001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>好吃点香脆腰果饼干礼盒装800g核桃饼杏仁饼腰果饼休闲零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><a href="single.html" title="Get It" class="btn btn-primary btn-normal btn-inline " target="_self">Buy</a></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
+                         <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'skirt003'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>好吃点香脆腰果饼干礼盒装800g核桃饼杏仁饼腰果饼休闲零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><a href="single.html" title="Get It" class="btn btn-primary btn-normal btn-inline " target="_self">Buy</a></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
+                         <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	     </a></div>
 	     <div class="clearfix"> </div>
 	    </div> 
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.html">
+	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.php">
 	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'shirt001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>好吃点香脆腰果饼干礼盒装800g核桃饼杏仁饼腰果饼休闲零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><a href="single.html" title="Get It" class="btn btn-primary btn-normal btn-inline " target="_self">Buy</a></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
+                         <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	    </a> </div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.html">
+	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
 	     	<div class="grid_1">
-	     	 <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
-	     	  <div class="grid_2">
-	     	  	<p>好吃点香脆腰果饼干礼盒装800g核桃饼杏仁饼腰果饼休闲零食</p>
-	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><a href="single.html" title="Get It" class="btn btn-primary btn-normal btn-inline " target="_self">Buy</a></li>
-	     	  		<div class="clearfix"> </div>
-	     	  	</ul>
-	     	  </div>
-	     	</div>
-	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.html">
-	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'longsleev001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src="images/photo2.png" class="img-responsive" alt=""/> </div>
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
-	     	  	<p>好吃点香脆腰果饼干礼盒装800g核桃饼杏仁饼腰果饼休闲零食</p>
+	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
-	     	  		<li class="grid_2-left"><p>￥99<small>.33</small></p></li>
-	     	  		<li class="grid_2-right"><a href="single.html" title="Get It" class="btn btn-primary btn-normal btn-inline " target="_self">Buy</a></li>
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
 	     	  		<div class="clearfix"> </div>
 	     	  	</ul>
 	     	  </div>
 	     	</div>
+                         <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
+	     </a></div>
+	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	     	<div class="grid_1">
+            <?php
+               $query = "SELECT p_name, p_price, photo ";
+               $query .= "FROM product WHERE p_id = 'coat001'";
+               $result = mysqli_query($connection, $query);
+               if (!$result) {
+                   die("query is wrong");
+                       }
+                   while ($row = mysqli_fetch_array($result)) {
+               ?>  
+	     	  <div class="b-link-stroke b-animate-go  thickbox">
+		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+	     	  <div class="grid_2">
+	     	  	<p><?php echo $row["p_name"] ?></p>
+	     	  	<ul class="grid_2-bottom">
+	     	  		<li class="grid_2-left"><p>$<?php echo $row["p_price"] ?></p></li>
+	     	  		<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
+	     	  		<div class="clearfix"> </div>
+	     	  	</ul>
+	     	  </div>
+	     	</div>
+                         <?php
+                                   }
+                  mysqli_free_result($result);
+                        ?>
 	     </a></div>
 	     <div class="clearfix"> </div>
 	    </div> 
