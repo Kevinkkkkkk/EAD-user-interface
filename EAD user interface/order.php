@@ -280,54 +280,54 @@
                                 <span class="col col-1">Product Name</span>
                                 <span class="col col-2">Purchasing Price</span>
                                 <span class="col col-3">Purchase Quantity</span>
-                                <span class="col col-4">Subtotal (yuan)</span>
+                                <span class="col col-4">Subtotal</span>
                             </dt>
                                                         <dd class="item clearfix">
                                 <div class="item-row">
                                     <div class="col col-1">
                                         <div class="g-pic">
-                                            <img src="images/photo2.png" width="40" height="40" />
+                                            <img src="images/denim%20jacket.JPG" width="40" height="40" />
                                         </div>
                                         <div class="g-info">
-                                            <a href="#">Sweater</a>
+                                            <a href="#">Coat</a>
                                         </div>
                                     </div>
                 
-                                    <div class="col col-2">139￥</div>
+                                    <div class="col col-2">$99.00</div>
                                     <div class="col col-3">1</div>
-                                    <div class="col col-4">139￥</div>
+                                    <div class="col col-4">$99.00</div>
                                 </div>
                             </dd>
                                                         <dd class="item clearfix">
                                 <div class="item-row">
                                     <div class="col col-1">
                                         <div class="g-pic">
-                                            <img src="images/photo2.png"  width="40" height="40" />
+                                            <img src="images/cheongsam.JPG"  width="40" height="40" />
                                         </div>
                                         <div class="g-info">
-                                           <a href="#">Dress</a>
+                                           <a href="#">Cheongsam</a>
                                         </div>
                                     </div>
                 
-                                    <div class="col col-2">149￥</div>
+                                    <div class="col col-2">$69.00</div>
                                     <div class="col col-3">1</div>
-                                    <div class="col col-4">149￥</div>
+                                    <div class="col col-4">$69.00</div>
                                 </div>
                             </dd>
                                                         <dd class="item clearfix">
                                 <div class="item-row">
                                     <div class="col col-1">
                                         <div class="g-pic">
-                                            <img src="images/photo2.png" width="40" height="40" />
+                                            <img src="images/long-sleeved%20dress2.JPG" width="40" height="40" />
                                         </div>
                                         <div class="g-info">
-                                            <a href="#">Leggings</a>
+                                            <a href="#">Long Skirt</a>
                                         </div>
                                     </div>
                 
-                                    <div class="col col-2">39￥</div>
+                                    <div class="col col-2">$89.00</div>
                                     <div class="col col-3">4</div>
-                                    <div class="col col-4">156￥</div>
+                                    <div class="col col-4">$89.00</div>
                                 </div>
                             </dd>
                                                     </dl>
@@ -342,23 +342,23 @@
                                 <ul>
 
                                     <li>
-                                       Total Order Amount:<span>244￥</span>
+                                       Total Order Amount:<span></span>
                                     </li>
                                     <li>
-                                        Benefits:<span>-0￥</span>
+                                        Benefits:<span>-0$</span>
                                         <script type="text/javascript">
                                             checkoutConfig.activityDiscountMoney=0;
                                             checkoutConfig.totalPrice=244.00;
                                         </script>
                                     </li>
                                     <li>
-                                        Coupon deduction:<span id="couponDesc">-0￥</span>
+                                        Coupon deduction:<span id="couponDesc">-0$</span>
                                     </li>
                                     <li>
-                                        Freight:<span id="postageDesc">0￥</span>
+                                        Freight:<span id="postageDesc">0$</span>
                                     </li>
                                 </ul>
-                                <p class="checkout-total">Total amount payable:<span><strong id="totalPrice">244</strong>￥</span></p>
+                                <p class="checkout-total">Total amount payable:<span>$<strong id="totalPrice">244</strong></span></p>
                             </div>
                             <!--  -->
                         </div>

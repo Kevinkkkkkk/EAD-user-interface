@@ -41,7 +41,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -55,7 +55,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -69,7 +69,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -83,7 +83,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -100,7 +100,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt 2</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -114,7 +114,7 @@ require_once('includes/header.php');
       <div class="grid_2">
         <p>Shirt</p>
         <ul class="grid_2-bottom">
-          <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+          <li class="grid_2-left"><p>$99<small>.33</small></p></li>
           <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
           <div class="clearfix"> </div>
         </ul>
@@ -128,7 +128,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt 2</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -142,7 +142,7 @@ require_once('includes/header.php');
       <div class="grid_2">
         <p>Shirt</p>
         <ul class="grid_2-bottom">
-          <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+          <li class="grid_2-left"><p>$99<small>.33</small></p></li>
           <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
           <div class="clearfix"> </div>
         </ul>
@@ -159,7 +159,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -173,7 +173,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -187,7 +187,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -201,7 +201,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -218,7 +218,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt 2</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -232,7 +232,7 @@ require_once('includes/header.php');
       <div class="grid_2">
         <p>Shirt</p>
         <ul class="grid_2-bottom">
-          <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+          <li class="grid_2-left"><p>$99<small>.33</small></p></li>
           <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
           <div class="clearfix"> </div>
         </ul>
@@ -246,7 +246,7 @@ require_once('includes/header.php');
          <div class="grid_2">
            <p>shirt 2</p>
            <ul class="grid_2-bottom">
-             <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+             <li class="grid_2-left"><p>$99<small>.33</small></p></li>
              <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
              <div class="clearfix"> </div>
            </ul>
@@ -260,7 +260,7 @@ require_once('includes/header.php');
       <div class="grid_2">
         <p>Shirt</p>
         <ul class="grid_2-bottom">
-          <li class="grid_2-left"><p>￥99<small>.33</small></p></li>
+          <li class="grid_2-left"><p>$99<small>.33</small></p></li>
           <li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">Buy</div></li>
           <div class="clearfix"> </div>
         </ul>

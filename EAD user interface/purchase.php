@@ -65,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<table class="timetable_sub">
 				<thead>
 					<tr>
-						<th>Deleye</th>
+						<th>Delete</th>
 						<th>Product</th>
 						<th>Amount</th>
 						<th>Product Name</th>
@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/denim%20jacket2.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -96,8 +96,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</td>
-						<td class="invert">Sweater</td>
-						<td class="invert">￥45.99</td>
+						<td class="invert">Coat</td>
+						<td class="invert">$99.00</td>
 					</tr>
 					<tr class="rem2">
 						<td class="invert-closeb">
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/cheongsam.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -123,8 +123,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</td>
-						<td class="invert">Dress</td>
-						<td class="invert">￥45.99</td>
+						<td class="invert">Cheongsam</td>
+						<td class="invert">$69.00</td>
 						
 					</tr>
 					<tr class="rem3">
@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/shirt.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -151,8 +151,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</td>
-						<td class="invert">Leggings</td>
-						<td class="invert">￥45.99</td>
+						<td class="invert">T-shirt</td>
+						<td class="invert">$49.00</td>
 						
 					</tr>
 					<tr class="rem4">
@@ -169,7 +169,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="single.php"><img src="images/pur.png" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/long-sleeved%20dress2.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -179,8 +179,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 						</td>
-						<td class="invert">Cropped trousers</td>
-						<td class="invert">￥45.99</td>
+						<td class="invert">Long Skirt</td>
+						<td class="invert">$89.00</td>
 						
 					</tr>
 					
@@ -202,17 +202,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="checkout-left">	
 				
 				<div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s">
-					<a href="all.php"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Continue to buy</a>
+					<a href="all.php"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Choose more</a>
                     <a href="order.php"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>Submit orders</a>
 				</div>
 				<div class="checkout-left-basket animated wow slideInLeft" data-wow-delay=".5s">
 					<h4>Bill</h4>
 					<ul>
-						<li>Sweater<i>-</i> <span>¥45.99</span></li>
-						<li>Dress<i>-</i> <span>¥45.99</span></li>
-						<li>Leggings<i>-</i> <span>¥45.99</span></li>
-						<li>Cropped trousers <i>-</i> <span>¥45.99</span></li>
-						<li>Total <i>-</i> <span>¥183.96</span></li>
+						<li>Coat<i>-</i> <span>$99.00</span></li>
+						<li>Cheongsam<i>-</i> <span>$69.00</span></li>
+						<li>T-shirt<i>-</i> <span>$49.00</span></li>
+						<li>Long skirt<i>-</i> <span>$89.00</span></li>
+						<li>Total <i>-</i> <span>$306.00</span></li>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>

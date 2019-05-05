@@ -126,7 +126,7 @@ this['link']['cur'] = this;
             <div class="order-info">
                 <div class="info">
                     <p>
-                        Amount:<span class="pay-total">49.00￥</span>
+                        Amount:<span class="pay-total">49.00$</span>
                     </p>
                     <p>
                         Order:1150505740045173                    </p>
@@ -147,7 +147,7 @@ this['link']['cur'] = this;
                 <div class="box-hd bank-title clearfix">
                     <div id="titleWrap" class="title-wrap">
                         <h2 class="title">Select Payment Method</h2>
-                        <h2 class="title hide " >You still need to continue to pay <em>49.00</em> ￥</h2>
+                        <h2 class="title hide " >You still need to continue to pay <em>49.00</em> $</h2>
                         <span class="tip-tag"></span>
                     </div>
                 </div>

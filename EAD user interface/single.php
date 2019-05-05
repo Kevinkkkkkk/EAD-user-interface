@@ -235,9 +235,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="facts">
 									  <ul class="tab_list">
 									  	<li><a href="#"></a></li>
-									  	<li><a href="#"><img src="images/Long%20skirt.JPG"></a></li>
-									  	<li><a href="#"><img src="images/Long%20skirt2.JPG"></a></li>
-									  	<li><a href="#"><img src="images/Long%20sleeve.JPG"></a></li>
+									  	<li><a href="#"><img src="images/skirt1.jpg"></a></li>
+									  	<li><a href="#"><img src="images/skirt2.jpg"></a></li>
+									  	<li><a href="#"><img src="images/skirt3.jpg"></a></li>
 									  </ul>           
 							        </div>
 							     </div>	
