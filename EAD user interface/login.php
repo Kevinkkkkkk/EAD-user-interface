@@ -118,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   </div>
 			   <div class="col-md-6 login-right">
 			  	<h3>Sign in</h3>
-				<form>
+				<form action="login.php" method="post">
 				  <div>
 					<span>Email/Username/Verified phone<label>
                         </label></span><input type="text" name="u_name">
@@ -138,5 +138,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <?php
     require_once('includes/footer.php');
 ?>
-</body>
+
 </html>

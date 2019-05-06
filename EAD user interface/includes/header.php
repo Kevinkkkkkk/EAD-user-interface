@@ -1,4 +1,4 @@
-<html>
+    <html>
 <head>
 <title>Zura Women's Online Store</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -3,7 +3,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "ead";
+$dbname = "ead-g1";
 $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 // test if connection is ok
 if (mysqli_connect_errno()) {
