@@ -1,51 +1,6 @@
 <?php
 require_once('includes/db.php');
-
-if (isset($_POST['submit'])) {
-    if (empty($_POST['u_name']) || empty($_POST['u_password'])) {
-        $error = "usename or password is empty";
-    } else {
-        $username = $_POST['u_name'];
-        $password = $_POST['u_password'];
-        
-        $query  = "SELECT u_name, u_password ";
-        $query .= "FROM user_information ";
-        $query .= "WHERE u_name = '$username' AND u_password = '$password' ";
-        
-        
-        $result = mysqli_query($connection, $query);
-        
-        if (!$result) {
-            die("query is wrong");
-        }
-        
-        //save data to $row
-        $row = mysqli_fetch_array($result);
-        
-        $numrows=mysqli_num_rows($result);
-        if ($numrows == 1) {
-            session_start();
-            
-            $_SESSION['login_user'] = $username;
-            header('Location: login/index.php ');
-            
-        } else {
-            echo "Login failed";
-        }
-        
-        mysqli_free_result($result);
-    }
-}
-
 ?>
-
-<?php
-if (isset($error)) {
-    echo "<span>" . $error ."</span>";
-}
-
-?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -118,17 +73,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   </div>
 			   <div class="col-md-6 login-right">
 			  	<h3>Sign in</h3>
-				<form action="login.php" method="post">
+				<form>
 				  <div>
-					<span>Email/Username/Verified phone<label>
-                        </label></span><input type="text" name="u_name">
-					
+					<span>Email/Username/Verified phone<label>*</label></span>
+					<input type="text">
 				  </div>
 				  <div>
-					<span>Password<label>*</label></span><input type="password" name="u_password">
-					
+					<span>Password<label>*</label></span>
+					<input type="text">
 				  </div>
-				  <input type="submit" value="Sign In">
+				  <a class="forgot" href="#">Forgot password?</a>
+				  <input type="submit" value="Sign in">
 			    </form>
 			   </div>
 			   <div class="clearfix"> </div>
@@ -138,5 +93,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <?php
     require_once('includes/footer.php');
 ?>
-
+</body>
 </html>
