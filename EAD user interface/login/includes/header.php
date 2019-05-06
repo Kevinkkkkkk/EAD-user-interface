@@ -37,8 +37,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<ul class="shopping_grid">
                 <?php
-                            $query = "SELECT username ";
-                            $query .= "FROM user_information WHERE id = $_SESSION[login_id]";
+                            $query = "SELECT u_name ";
+                            $query .= "FROM user_information WHERE u_id = $_SESSION['login_id']";
                             $result = mysqli_query($connection, $query);
                                 if (!$result) {
                                     die("query is wrong");
