@@ -6,15 +6,15 @@
 <meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--webfont-->
 <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/responsiveslides.min.js"></script>
 <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -26,7 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     });
 </script>
-<script type="text/javascript" src="js/hover_pack.js"></script>
+<script type="text/javascript" src="../js/hover_pack.js"></script>
 </head>
 <body>
 <div class="header">
@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ?>
 <?php    // 3.use/show data, as rows of the table (php & HTML mixed)
                                     while ($row = mysqli_fetch_array($result)) {
-                                        echo "<li> " . $row["u_name"] . "<li>"; 
+                                        echo "<li>" . $row["u_name"] . "<li>"; 
                                        
                                         
 }
@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="special.php" data-hover="Events">Events</a></li>
 					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
-				 <script type="text/javascript" src="js/nav.js"></script>
+				 <script type="text/javascript" src="../js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
