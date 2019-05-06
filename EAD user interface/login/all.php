@@ -31,7 +31,7 @@ require_once('includes/header.php');
     Current Position:&nbsp;&nbsp; <a href="index.php"> Index </a><span>&gt;</span>
 <a href="javascript:;" onclick="return false">All Products</a></div></div></div>
     <div class="top_grid2">
-        <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+        <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -45,7 +45,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-           <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+           <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -59,7 +59,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-           <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+           <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -73,7 +73,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-           <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+           <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -90,7 +90,7 @@ require_once('includes/header.php');
       <div class="clearfix"> </div>
      </div>
      <div class="top_grid2">
-      <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+      <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt2.JPG" class="img-responsive" alt=""/> </div>
@@ -104,7 +104,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-      <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+      <div class="col-md-41 top_grid1-box1"><a href="single.php">
     <div class="grid_1">
       <div class="b-link-stroke b-animate-go  thickbox">
         <img src="../images/cheongsam.JPG" class="img-responsive" alt=""/> </div>
@@ -118,7 +118,7 @@ require_once('includes/header.php');
       </div>
     </div>
    </a></div>
-              <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+              <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt2.JPG" class="img-responsive" alt=""/> </div>
@@ -132,7 +132,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-      <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+      <div class="col-md-41 top_grid1-box1"><a href="single.php">
     <div class="grid_1">
       <div class="b-link-stroke b-animate-go  thickbox">
         <img src="../images/cheongsam.JPG" class="img-responsive" alt=""/> </div>
@@ -148,7 +148,7 @@ require_once('includes/header.php');
    </a></div>
     <div class="clearfix"> </div>
 	    </div>
-        <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+        <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -162,7 +162,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-           <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+           <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -176,7 +176,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-           <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+           <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -190,7 +190,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-           <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+           <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt.JPG" class="img-responsive" alt=""/> </div>
@@ -207,7 +207,7 @@ require_once('includes/header.php');
       <div class="clearfix"> </div>
      </div>
      <div class="top_grid2">
-      <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+      <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt2.JPG" class="img-responsive" alt=""/> </div>
@@ -221,7 +221,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-      <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+      <div class="col-md-41 top_grid1-box1"><a href="single.php">
     <div class="grid_1">
       <div class="b-link-stroke b-animate-go  thickbox">
         <img src="../images/cheongsam.JPG" class="img-responsive" alt=""/> </div>
@@ -235,7 +235,7 @@ require_once('includes/header.php');
       </div>
     </div>
    </a></div>
-              <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+              <div class="col-md-41 top_grid1-box1"><a href="single.php">
        <div class="grid_1">
          <div class="b-link-stroke b-animate-go  thickbox">
            <img src="../images/Long skirt2.JPG" class="img-responsive" alt=""/> </div>
@@ -249,7 +249,7 @@ require_once('includes/header.php');
          </div>
        </div>
       </a></div>
-      <div class="col-md-41 top_grid1-box1"><a href="login/single.php">
+      <div class="col-md-41 top_grid1-box1"><a href="single.php">
     <div class="grid_1">
       <div class="b-link-stroke b-animate-go  thickbox">
         <img src="../images/cheongsam.JPG" class="img-responsive" alt=""/> </div>

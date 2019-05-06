@@ -86,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="login/single.php"><img src="images/denim%20jacket2.JPG" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/denim%20jacket2.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="login/single.php"><img src="images/cheongsam.JPG" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/cheongsam.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="login/single.php"><img src="images/shirt.JPG" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/shirt.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           
@@ -169,7 +169,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								});
 						   </script>
 						</td>
-						<td class="invert-image"><a href="login/single.php"><img src="images/long-sleeved%20dress2.JPG" alt=" " class="img-responsive" /></a></td>
+						<td class="invert-image"><a href="single.php"><img src="images/long-sleeved%20dress2.JPG" alt=" " class="img-responsive" /></a></td>
 						<td class="invert">
 							 <div class="quantity"> 
 								<div class="quantity-select">                           

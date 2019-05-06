@@ -7,13 +7,13 @@ require_once('includes/header.php');
 <div class="slider">
 	  <div class="callbacks_container">
 	      <ul class="rslides" id="slider">
-	        <li><a href="login/single.php"><img src="../images/slider1.jpg" class="img-responsive" alt=""/></a>
+	        <li><a href="single.php"><img src="../images/slider1.jpg" class="img-responsive" alt=""/></a>
 	         <div class="banner_desc">
 				<h1></h1>
 				<h2></h2>
 			 </div>
 	        </li>
-              <li><a href=login/single.php><img src="../images/slider2.jpg" class="img-responsive" alt=""/></a>
+              <li><a href=single.php><img src="../images/slider2.jpg" class="img-responsive" alt=""/></a>
 	          <div class="banner_desc">
 				<h1></h1>
 				<h2></h2>
@@ -102,7 +102,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -120,7 +120,7 @@ require_once('includes/header.php');
                                    }
                   mysqli_free_result($result);
                         ?>
-            	      <div class="col-md-4 box_2"><a href="login/single.php">
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -156,7 +156,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -186,7 +186,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -204,7 +204,7 @@ require_once('includes/header.php');
                                    }
                   mysqli_free_result($result);
                         ?>
-            	      <div class="col-md-4 box_2"><a href="login/single.php">
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -240,7 +240,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -270,7 +270,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -288,7 +288,7 @@ require_once('includes/header.php');
                                    }
                   mysqli_free_result($result);
                         ?>
-            	      <div class="col-md-4 box_2"><a href="login/single.php">
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -324,7 +324,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -355,7 +355,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -373,7 +373,7 @@ require_once('includes/header.php');
                                    }
                   mysqli_free_result($result);
                         ?>
-            	      <div class="col-md-4 box_2"><a href="login/single.php">
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -409,7 +409,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -439,7 +439,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -457,7 +457,7 @@ require_once('includes/header.php');
                                    }
                   mysqli_free_result($result);
                         ?>
-            	      <div class="col-md-4 box_2"><a href="login/single.php">
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -493,7 +493,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -523,7 +523,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
@@ -541,7 +541,7 @@ require_once('includes/header.php');
                                    }
                   mysqli_free_result($result);
                         ?>
-            	      <div class="col-md-4 box_2"><a href="login/single.php">
+            	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -577,7 +577,7 @@ require_once('includes/header.php');
                        }
                    while ($row = mysqli_fetch_array($result)) {
                ?>
-	      <div class="col-md-4 box_2"><a href="login/single.php">
+	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
 		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
