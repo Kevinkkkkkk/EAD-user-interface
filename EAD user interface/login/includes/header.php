@@ -49,9 +49,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ?>
 <?php    // 3.use/show data, as rows of the table (php & HTML mixed)
                                     while ($row = mysqli_fetch_array($result)) {
-                                        echo "<li>" . $row["u_name"] . "<li>"; 
-                                       
-                                        
+                                        echo "<li>" . $row["u_name"] . "<li>";
+
+
 }
 ?>
 			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
