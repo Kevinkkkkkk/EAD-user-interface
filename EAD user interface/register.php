@@ -1,5 +1,22 @@
 <?php
 require_once('includes/db.php');
+
+if(isset($_POST['submit'])) {
+    $u_id = $_POST['u_id'];
+    $u_name = $_POST['u_name'];
+    $u_password = $_POST['u_password'];
+    $u_telephone = $_POST['u_telephone'];
+    
+//2. Do a query (select all students)
+$query = "INSERT INTO user_information  (u_name, u_password, u_telephone ) ";
+$query .= "VALUES ('$u_name', '$u_password', '$u_telephone' ) ";
+
+mysqli_query($connection, $query);
+header('location: login.php');    
+}
+
+
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -65,23 +82,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="about">
   <div class="container">
       <div class="register">
-		  	  <form id="form1" name="form1" method="post" action="" onsubmit="return checkForm()">
+		  	  <form id="form1" name="form1" method="post" action="register" onsubmit="return checkForm()">
 				 <div class="register-top-grid">
 					 <div>
 						<span>Email/Username<label>*</label></span>
-						<input type="text">
+						<input type="varchar" name="u_name">
 					 </div>
 					 <div>
 						 <span>Mobile number<label>*</label></span>
-						 <input type="text" name="phonenumber" oninput="value=value.replace(/[^\d]/g,'')">
+						 <input type="text" name="u_telephone" oninput="value=value.replace(/[^\d]/g,'')">
 					 </div>
 					 </div>
 <script language="javascript" type="text/javascript">
 function checkForm(){
-var pwd = document.getElementById("pwd");
-var pwd2 = document.getElementById("pwd2");
-checkInput(pwd,"Password");
-checkInput(pwd2,"Confirm password");
+var pwd = document.getElementById("u_password");
+var pwd2 = document.getElementById("u_password2");
+checkInput(u_password,"Password");
+checkInput(u_passwprd2,"Confirm password");
 return false;
 }
 function checkInput(obj,title){
@@ -98,16 +115,16 @@ showMsg(obj,msg);
 if(msgDiv){
 msgDiv.style.display ="none";
 }
-if(obj.id=="pwd2"){
+if(obj.id=="u_password2"){
 checkPwdSame(obj);
 }
 }
 }
 function checkPwdSame(obj){
 var msgDiv = document.getElementById(obj.id+"msg");
-var pwd = document.getElementById("pwd");
+var pwd = document.getElementById("u_password");
 var msg = "The passwords entered twice do not match, please re-enter";
-if(obj.value!=pwd.value){
+if(obj.value!=u_password.value){
 if(msgDiv){
 msgDiv.innerHTML = msg;
 msgDiv.style.display ="";
@@ -152,11 +169,11 @@ $(this).siblings("span").show();
 				     <div class="register-bottom-grid" name="form1">
 							 <div>
 								<span>Password<label>*</label></span>
-								<input name="pwd" type="password" id="pwd" onblur="checkInput(this,'password')"/>
+								<input name="u_password" type="varchar" id="u_password" onblur="checkInput(this,'password')"/>
 							 </div>
 							 <div>
 								<span>Confirm Password<label>*</label></span>
-								<input name="pwd2" type="password" id="pwd2" onblur="checkInput(this,'confirm password')" />
+								<input name="u_password2" type="varchar" id="u_password2" onblur="checkInput(this,'confirm password')" />
 							 </div>
 							 <div class="clearfix"> </div>
 					 </div>
@@ -171,7 +188,7 @@ $(this).siblings("span").show();
 				<div class="clearfix"> </div>
 				<div class="register-but">
 				   <form>
-					   <input type="submit" value="Sign up">
+					   <input type="submit" name="submit"value="Sign up">
 					   <div class="clearfix"> </div>
 				   </form>
 				</div>
