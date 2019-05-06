@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
         $username = $_POST['u_name'];
         $password = $_POST['u_password'];
         
-        $query  = "SELECT u_name, u_password, level ";
+        $query  = "SELECT u_name, u_password ";
         $query .= "FROM user_information ";
         $query .= "WHERE u_name = '$username' AND u_password = '$password' ";
         
@@ -121,12 +121,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<form>
 				  <div>
 					<span>Email/Username/Verified phone<label>
-                        <input type="text" name="u_name" id="userpwd" class="txt_input" onfocus="if (value ==&#39;******&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;******&#39;}" value="******">
-                        </label></span>
+                        </label></span><input type="text" name="u_name">
 					
 				  </div>
 				  <div>
-					<span>Password<label><input type="password" name="u_password" id="userpwd" class="txt_input" onfocus="if (value ==&#39;******&#39;){value =&#39;&#39;}" onblur="if (value ==&#39;&#39;){value=&#39;******&#39;}" value="******"></label></span>
+					<span>Password<label>*</label></span><input type="password" name="u_password">
 					
 				  </div>
 				  <input type="submit" value="Sign In">
