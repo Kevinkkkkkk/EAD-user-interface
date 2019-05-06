@@ -1,3 +1,6 @@
+<?php
+require_once('db.php');
+?>
 <html>
 <head>
 <title>Zura Women's Online Store</title>
@@ -38,7 +41,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ul class="shopping_grid">
                 <?php
                             $query = "SELECT u_name ";
-                            $query .= "FROM user_information WHERE u_id = $_SESSION['login_id']";
+                            $query .= "FROM user_information WHERE u_id = $_SESSION[login_id]";
                             $result = mysqli_query($connection, $query);
                                 if (!$result) {
                                     die("query is wrong");
