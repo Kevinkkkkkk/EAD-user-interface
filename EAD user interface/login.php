@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
         $username = $_POST['u_name'];
         $password = $_POST['u_password'];
         
-        $query  = "SELECT u_name, u_password ";
+        $query  = "SELECT u_id, u_name, u_password ";
         $query .= "FROM user_information ";
         $query .= "WHERE u_name = '$username' AND u_password = '$password' ";
         
@@ -118,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   </div>
 			   <div class="col-md-6 login-right">
 			  	<h3>Sign in</h3>
-				<form action="login.php" method="post">
+				<form action="" method="POST">
 				  <div>
 					<span>Email/Username/Verified phone<label>
                         </label></span><input type="text" name="u_name">
@@ -128,7 +128,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<span>Password<label>*</label></span><input type="password" name="u_password">
 					
 				  </div>
-				  <input type="submit" value="Sign In">
+				  <input type="submit" name="submit" value="Sign In">
 			    </form>
 			   </div>
 			   <div class="clearfix"> </div>
