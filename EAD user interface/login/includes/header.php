@@ -36,8 +36,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li>Zura Women’s Online Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="register.php"><li>Resgister</li></a>
-			      <a href="login.php"><li>Login</li></a>
+                <?php
+                            $query = "SELECT username ";
+                            $query .= "FROM user_information WHERE id = $_SESSION[login_id]";
+                            $result = mysqli_query($connection, $query);
+                                if (!$result) {
+                                    die("query is wrong");
+                                                }
+?>
+<?php    // 3.use/show data, as rows of the table (php & HTML mixed)
+                                    while ($row = mysqli_fetch_array($result)) {
+                                        echo "<li> " . $row["u_name"] . "<li>"; 
+                                       
+                                        
+}
+?>
 			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
