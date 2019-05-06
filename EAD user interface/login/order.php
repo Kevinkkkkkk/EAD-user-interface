@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Order Confirmation</title>
-<link href="css/public.css" type="text/css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="css/base.css"/>
-<script type="text/javascript" src="js/jquery_cart.js"></script>  
-<link rel="stylesheet" type="text/css" href="css/checkOut.css" />
+<link href="../css/public.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+<script type="text/javascript" src="../js/jquery_cart.js"></script>  
+<link rel="stylesheet" type="text/css" href="../css/checkOut.css" />
 </head>
 <body>
 <div class="header">
@@ -16,7 +16,7 @@
                 <li>Zura Women’s Online Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -32,7 +32,7 @@
 					<li><a href="special.php" data-hover="Events">Events</a></li>
 					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
-				 <script type="text/javascript" src="js/nav.js"></script>
+				 <script type="text/javascript" src="../js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
@@ -92,7 +92,7 @@
             </dd>
         </dl>
                         <div class="item use-new-addr"  id="J_useNewAddr" data-state="off">
-             <span class="iconfont icon-add"><img src="images/add_cart.png" /></span> 
+             <span class="iconfont icon-add"><img src="../images/add_cart.png" /></span> 
             Use new address
         </div>
             </div>
@@ -286,7 +286,7 @@
                                 <div class="item-row">
                                     <div class="col col-1">
                                         <div class="g-pic">
-                                            <img src="images/denim%20jacket.JPG" width="40" height="40" />
+                                            <img src="../images/denim%20jacket.JPG" width="40" height="40" />
                                         </div>
                                         <div class="g-info">
                                             <a href="#">Coat</a>
@@ -302,7 +302,7 @@
                                 <div class="item-row">
                                     <div class="col col-1">
                                         <div class="g-pic">
-                                            <img src="images/cheongsam.JPG"  width="40" height="40" />
+                                            <img src="../images/cheongsam.JPG"  width="40" height="40" />
                                         </div>
                                         <div class="g-info">
                                            <a href="#">Cheongsam</a>
@@ -318,7 +318,7 @@
                                 <div class="item-row">
                                     <div class="col col-1">
                                         <div class="g-pic">
-                                            <img src="images/long-sleeved%20dress2.JPG" width="40" height="40" />
+                                            <img src="../images/long-sleeved%20dress2.JPG" width="40" height="40" />
                                         </div>
                                         <div class="g-info">
                                             <a href="#">Long Skirt</a>
@@ -376,19 +376,19 @@
             </div>
         </div>
     </div>
-<script src="js/base.min.js"></script>
+<script src="../js/base.min.js"></script>
 
-        <script type="text/javascript" src="js/address_all.js"></script>
-<script type="text/javascript" src="js/checkout.min.js"></script> 
+        <script type="text/javascript" src="../js/address_all.js"></script>
+<script type="text/javascript" src="../js/checkout.min.js"></script> 
     <div class="fixed-buttons">
         <ul>
-            <li><a href="#" class="fixed-weixin"><img src="images/fixed_weixin.png" /><div class="weixin-pic"><img src="images/weixin.png"></div></a></li>
-            <li><img id="imgBtn-to-top" src="images/back_top.png" /></li>
+            <li><a href="#" class="fixed-weixin"><img src="../images/fixed_weixin.png" /><div class="weixin-pic"><img src="../images/weixin.png"></div></a></li>
+            <li><img id="imgBtn-to-top" src="../images/back_top.png" /></li>
         </ul>
     </div>
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-    <script src="js/unslider.min.js" type="text/javascript"></script>
-    <script src="js/index.js" type="text/javascript"></script>
+    <script src="../js/unslider.min.js" type="text/javascript"></script>
+    <script src="../js/index.js" type="text/javascript"></script>
 
 </body>
 </html>

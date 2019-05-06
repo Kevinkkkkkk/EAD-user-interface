@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
         $numrows=mysqli_num_rows($result);
         if ($numrows == 1) {
             session_start();
-            
+            $_SESSION['login_id'] = $row['u_id'];
             $_SESSION['login_user'] = $username;
             header('Location: login/index.php ');
             

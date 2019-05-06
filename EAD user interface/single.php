@@ -275,7 +275,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  </div>
 		<h3 class="single_head">Guess You Like</h3>	
 	    <div class="related_products">
-	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="login/single.php">
 <div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -302,7 +302,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	     </a></div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	    <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -329,7 +329,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -359,7 +359,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     <div class="clearfix"> </div>
 	    </div> 
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -386,7 +386,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	    </a> </div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	    <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -413,7 +413,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";

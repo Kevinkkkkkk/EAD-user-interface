@@ -7,14 +7,14 @@
 <meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--webfont-->
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/responsiveslides.min.js"></script>
 <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -26,14 +26,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     });
 </script>
-<script type="text/javascript" src="js/hover_pack.js"></script>
-<link href="css/public.css" type="text/css" rel="stylesheet"/>
-        <link rel="stylesheet" type="text/css" href="css/base.css"/>
-        <script type="text/javascript" src="js/jquery_cart.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/buyConfirm.css" />
-		<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
-   		 <script src="js/unslider.min.js" type="text/javascript"></script>
-  	     <script src="js/index.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/hover_pack.js"></script>
+<link href="../css/public.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+        <script type="text/javascript" src="../js/jquery_cart.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/buyConfirm.css" />
+		<script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+   		 <script src="../js/unslider.min.js" type="text/javascript"></script>
+  	     <script src="../js/index.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 window.onload = function(){
@@ -87,7 +87,7 @@ this['link']['cur'] = this;
                 <li>Zura Women’s Online Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -103,7 +103,7 @@ this['link']['cur'] = this;
 					<li><a href="special.php" data-hover="Events">Events</a></li>
 					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
-				 <script type="text/javascript" src="js/nav.js"></script>
+				 <script type="text/javascript" src="../js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
@@ -138,7 +138,7 @@ this['link']['cur'] = this;
                                     Personal electronic invoice                                                    </p>
                 </div>
                 <div class="icon-box">
-                    <i class="iconfont"><img src="images/yes_ok.png"></i>
+                    <i class="iconfont"><img src="../images/yes_ok.png"></i>
                 </div>
             </div>
             
@@ -162,10 +162,10 @@ this['link']['cur'] = this;
                             <dd>
                         <fieldset id="test4-input-input_tab1-input_tab2" style=" border:none;">
                         <ul class="payment-list clearfix" >
-                           <li> <input class="input_tab1" name="myradio" id="r1" type="radio" checked="checked"/><label for="r1" ><img src="images/wx.png" alt=""/></label></li>
-                            <li><input class="input_tab2" name="myradio" id="r2" type="radio" /><label for="r2" ><img src="images/zfb.png" alt=""/></label></li>
-                            <li> <input class="input_tab1" name="myradio" id="r3" type="radio" /><label for="r3" ><img src="images/yck.png" alt=""/></label></li>
-                           <li>  <input class="input_tab1" name="myradio" id="r4" type="radio" /><label for="r4" ><img src="images/zxzf.png" alt=""/></label></li>
+                           <li> <input class="input_tab1" name="myradio" id="r1" type="radio" checked="checked"/><label for="r1" ><img src="../images/wx.png" alt=""/></label></li>
+                            <li><input class="input_tab2" name="myradio" id="r2" type="radio" /><label for="r2" ><img src="../images/zfb.png" alt=""/></label></li>
+                            <li> <input class="input_tab1" name="myradio" id="r3" type="radio" /><label for="r3" ><img src="../images/yck.png" alt=""/></label></li>
+                           <li>  <input class="input_tab1" name="myradio" id="r4" type="radio" /><label for="r4" ><img src="../images/zxzf.png" alt=""/></label></li>
                              </ul>
                         <div >
                         <div  id="test4_2" style="display:none;">
@@ -194,28 +194,28 @@ this['link']['cur'] = this;
                             </dt>
                             <dd>
                                                                 <ul class="payment-list clearfix">
-                                    <li><label  for="CMB"><input type="radio" name="payOnlineBank" id="CMB" value="CMB" /> <img src="http://s1.mi.com/images/payOnline_zsyh.gif" alt=""/></label></li>
-                                    <li><label  for="ICBCB2C"><input type="radio" name="payOnlineBank" id="ICBCB2C" value="ICBCB2C" /> <img src="http://s1.mi.com/images/payOnline_gsyh.gif" alt=""/></label></li>
-                                    <li><label  for="CCB"><input type="radio" name="payOnlineBank" id="CCB" value="CCB" /> <img src="http://s1.mi.com/images/payOnline_jsyh.gif" alt=""/></label></li>
-                                    <li><label  for="ABC"><input type="radio" name="payOnlineBank" id="ABC" value="ABC" /> <img src="http://s1.mi.com/images/payOnline_nyyh.gif" alt=""/></label></li>
-                                    <li><label  for="BOCB2C"><input type="radio" name="payOnlineBank" id="BOCB2C" value="BOCB2C" /> <img src="http://s1.mi.com/images/payOnline_zgyh.gif" alt=""/></label></li>
-                                    <li><label  for="COMM"><input type="radio" name="payOnlineBank" id="COMM" value="COMM" /> <img src="http://s1.mi.com/images/payOnline_jtyh.gif" alt=""/></label></li>
-                                    <li><label  for="PSBC-DEBIT"><input type="radio" name="payOnlineBank" id="PSBC-DEBIT" value="PSBC-DEBIT" /> <img src="http://s1.mi.com/images/payOnline_youzheng.gif" alt=""/></label></li>
-                                    <li><label  for="GDB"><input type="radio" name="payOnlineBank" id="GDB" value="GDB" /> <img src="http://s1.mi.com/images/payOnline_gfyh.gif" alt=""/></label></li>
-                                    <li><label  for="SPDB"><input type="radio" name="payOnlineBank" id="SPDB" value="SPDB" /> <img src="http://s1.mi.com/images/payOnline_pufa.gif" alt=""/></label></li>
-                                    <li><label  for="CEBBANK"><input type="radio" name="payOnlineBank" id="CEBBANK" value="CEBBANK" /> <img src="http://s1.mi.com/images/payOnline_gdyh.gif" alt=""/></label></li>
-                                    <li><label  for="SPABANK"><input type="radio" name="payOnlineBank" id="SPABANK" value="SPABANK" /> <img src="http://s1.mi.com/images/payOnline_payh.gif" alt=""/></label></li>
-                                    <li><label  for="CIB"><input type="radio" name="payOnlineBank" id="CIB" value="CIB" /> <img src="http://s1.mi.com/images/payOnline_xyyh.gif" alt=""/></label></li>
-                                    <li><label  for="CMBC"><input type="radio" name="payOnlineBank" id="CMBC" value="CMBC" /> <img src="http://s1.mi.com/images/payOnline_msyh.gif" alt=""/></label></li>
-                                    <li><label  for="BOB"><input type="radio" name="payOnlineBank" id="BOB" value="BOB" /> <img src="http://s1.mi.com/images/payOnline_bjyh.gif" alt=""/></label></li>
-                                    <li><label  for="CITIC"><input type="radio" name="payOnlineBank" id="CITIC" value="CITIC" /> <img src="http://s1.mi.com/images/payOnline_zxyh.gif" alt=""/></label></li>
-                                    <li><label  for="SDB"><input type="radio" name="payOnlineBank" id="SDB" value="SDB" /> <img src="http://s1.mi.com/images/payOnline_sfyh.gif" alt=""/></label></li>
-                                    <li><label  for="SHBANK"><input type="radio" name="payOnlineBank" id="SHBANK" value="SHBANK" /> <img src="http://s1.mi.com/images/payOnline_shyh.gif" alt=""/></label></li>
-                                    <li><label  for="BJRCB"><input type="radio" name="payOnlineBank" id="BJRCB" value="BJRCB" /> <img src="http://s1.mi.com/images/payOnline_bjnsyh.gif" alt=""/></label></li>
-                                    <li><label  for="NBBANK"><input type="radio" name="payOnlineBank" id="NBBANK" value="NBBANK" /> <img src="http://s1.mi.com/images/payOnline_nbyh.gif" alt=""/></label></li>
-                                    <li><label  for="HZCBB2C"><input type="radio" name="payOnlineBank" id="HZCBB2C" value="HZCBB2C" /> <img src="http://s1.mi.com/images/payOnline_hzyh.gif" alt=""/></label></li>
-                                    <li><label  for="SHRCB"><input type="radio" name="payOnlineBank" id="SHRCB" value="SHRCB" /> <img src="http://s1.mi.com/images/payOnline_shnsyh.gif" alt=""/></label></li>
-                                    <li><label  for="FDB"><input type="radio" name="payOnlineBank" id="FDB" value="FDB" /> <img src="http://s1.mi.com/images/payOnline_fcyh.gif" alt=""/></label></li>                                </ul>
+                                    <li><label  for="CMB"><input type="radio" name="payOnlineBank" id="CMB" value="CMB" /> <img src="http://s1.mi.com/../images/payOnline_zsyh.gif" alt=""/></label></li>
+                                    <li><label  for="ICBCB2C"><input type="radio" name="payOnlineBank" id="ICBCB2C" value="ICBCB2C" /> <img src="http://s1.mi.com/../images/payOnline_gsyh.gif" alt=""/></label></li>
+                                    <li><label  for="CCB"><input type="radio" name="payOnlineBank" id="CCB" value="CCB" /> <img src="http://s1.mi.com/../images/payOnline_jsyh.gif" alt=""/></label></li>
+                                    <li><label  for="ABC"><input type="radio" name="payOnlineBank" id="ABC" value="ABC" /> <img src="http://s1.mi.com/../images/payOnline_nyyh.gif" alt=""/></label></li>
+                                    <li><label  for="BOCB2C"><input type="radio" name="payOnlineBank" id="BOCB2C" value="BOCB2C" /> <img src="http://s1.mi.com/../images/payOnline_zgyh.gif" alt=""/></label></li>
+                                    <li><label  for="COMM"><input type="radio" name="payOnlineBank" id="COMM" value="COMM" /> <img src="http://s1.mi.com/../images/payOnline_jtyh.gif" alt=""/></label></li>
+                                    <li><label  for="PSBC-DEBIT"><input type="radio" name="payOnlineBank" id="PSBC-DEBIT" value="PSBC-DEBIT" /> <img src="http://s1.mi.com/../images/payOnline_youzheng.gif" alt=""/></label></li>
+                                    <li><label  for="GDB"><input type="radio" name="payOnlineBank" id="GDB" value="GDB" /> <img src="http://s1.mi.com/../images/payOnline_gfyh.gif" alt=""/></label></li>
+                                    <li><label  for="SPDB"><input type="radio" name="payOnlineBank" id="SPDB" value="SPDB" /> <img src="http://s1.mi.com/../images/payOnline_pufa.gif" alt=""/></label></li>
+                                    <li><label  for="CEBBANK"><input type="radio" name="payOnlineBank" id="CEBBANK" value="CEBBANK" /> <img src="http://s1.mi.com/../images/payOnline_gdyh.gif" alt=""/></label></li>
+                                    <li><label  for="SPABANK"><input type="radio" name="payOnlineBank" id="SPABANK" value="SPABANK" /> <img src="http://s1.mi.com/../images/payOnline_payh.gif" alt=""/></label></li>
+                                    <li><label  for="CIB"><input type="radio" name="payOnlineBank" id="CIB" value="CIB" /> <img src="http://s1.mi.com/../images/payOnline_xyyh.gif" alt=""/></label></li>
+                                    <li><label  for="CMBC"><input type="radio" name="payOnlineBank" id="CMBC" value="CMBC" /> <img src="http://s1.mi.com/../images/payOnline_msyh.gif" alt=""/></label></li>
+                                    <li><label  for="BOB"><input type="radio" name="payOnlineBank" id="BOB" value="BOB" /> <img src="http://s1.mi.com/../images/payOnline_bjyh.gif" alt=""/></label></li>
+                                    <li><label  for="CITIC"><input type="radio" name="payOnlineBank" id="CITIC" value="CITIC" /> <img src="http://s1.mi.com/../images/payOnline_zxyh.gif" alt=""/></label></li>
+                                    <li><label  for="SDB"><input type="radio" name="payOnlineBank" id="SDB" value="SDB" /> <img src="http://s1.mi.com/../images/payOnline_sfyh.gif" alt=""/></label></li>
+                                    <li><label  for="SHBANK"><input type="radio" name="payOnlineBank" id="SHBANK" value="SHBANK" /> <img src="http://s1.mi.com/../images/payOnline_shyh.gif" alt=""/></label></li>
+                                    <li><label  for="BJRCB"><input type="radio" name="payOnlineBank" id="BJRCB" value="BJRCB" /> <img src="http://s1.mi.com/../images/payOnline_bjnsyh.gif" alt=""/></label></li>
+                                    <li><label  for="NBBANK"><input type="radio" name="payOnlineBank" id="NBBANK" value="NBBANK" /> <img src="http://s1.mi.com/../images/payOnline_nbyh.gif" alt=""/></label></li>
+                                    <li><label  for="HZCBB2C"><input type="radio" name="payOnlineBank" id="HZCBB2C" value="HZCBB2C" /> <img src="http://s1.mi.com/../images/payOnline_hzyh.gif" alt=""/></label></li>
+                                    <li><label  for="SHRCB"><input type="radio" name="payOnlineBank" id="SHRCB" value="SHRCB" /> <img src="http://s1.mi.com/../images/payOnline_shnsyh.gif" alt=""/></label></li>
+                                    <li><label  for="FDB"><input type="radio" name="payOnlineBank" id="FDB" value="FDB" /> <img src="http://s1.mi.com/../images/payOnline_fcyh.gif" alt=""/></label></li>                                </ul>
                             </dd>
                         </dl>
                         
@@ -232,9 +232,9 @@ this['link']['cur'] = this;
             </div>
 </form>  
 </div>
-<script src="js/base.min.js"></script>
+<script src="../js/base.min.js"></script>
 
-        <script type="text/javascript" src="js/buyConfirm.js"></script>
+        <script type="text/javascript" src="../js/buyConfirm.js"></script>
    
 </div>
 </body>

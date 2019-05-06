@@ -8,7 +8,7 @@ if(isset($_POST['submit'])) {
     $u_telephone = $_POST['u_telephone'];
     
 //2. Do a query (select all students)
-$query = "INSERT INTO user_information  (u_name, u_password, u_telephone ) ";
+$query = "INSERT INTO user_information (u_name, u_password, u_telephone ) ";
 $query .= "VALUES ('$u_name', '$u_password', '$u_telephone' ) ";
 
 mysqli_query($connection, $query);
@@ -82,11 +82,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="about">
   <div class="container">
       <div class="register">
-		  	  <form id="form1" name="form1" method="post" action="register" onsubmit="return checkForm()">
+		  	  <form id="form1" name="form1" method="post" onsubmit="return checkForm()">
 				 <div class="register-top-grid">
 					 <div>
 						<span>Email/Username<label>*</label></span>
-						<input type="varchar" name="u_name">
+						<input type="text" name="u_name">
 					 </div>
 					 <div>
 						 <span>Mobile number<label>*</label></span>
@@ -95,8 +95,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 </div>
 <script language="javascript" type="text/javascript">
 function checkForm(){
-var pwd = document.getElementById("u_password");
-var pwd2 = document.getElementById("u_password2");
+var u_password = document.getElementById("u_password");
+var u_password2 = document.getElementById("u_password2");
 checkInput(u_password,"Password");
 checkInput(u_passwprd2,"Confirm password");
 return false;
@@ -122,7 +122,7 @@ checkPwdSame(obj);
 }
 function checkPwdSame(obj){
 var msgDiv = document.getElementById(obj.id+"msg");
-var pwd = document.getElementById("u_password");
+var u_password = document.getElementById("u_password");
 var msg = "The passwords entered twice do not match, please re-enter";
 if(obj.value!=u_password.value){
 if(msgDiv){
@@ -169,11 +169,11 @@ $(this).siblings("span").show();
 				     <div class="register-bottom-grid" name="form1">
 							 <div>
 								<span>Password<label>*</label></span>
-								<input name="u_password" type="varchar" id="u_password" onblur="checkInput(this,'password')"/>
+								<input name="u_password" type="password" id="u_password" onblur="checkInput(this,'password')"/>
 							 </div>
 							 <div>
 								<span>Confirm Password<label>*</label></span>
-								<input name="u_password2" type="varchar" id="u_password2" onblur="checkInput(this,'confirm password')" />
+								<input name="u_password2" type="password" id="u_password2" onblur="checkInput(this,'confirm password')" />
 							 </div>
 							 <div class="clearfix"> </div>
 					 </div>

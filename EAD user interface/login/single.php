@@ -10,17 +10,17 @@ require_once('includes/db.php');
 <meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--webfont-->
 <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/hover_pack.js"></script>
-<link rel="stylesheet" href="css/etalage.css">
-<script src="js/jquery.etalage.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../js/hover_pack.js"></script>
+<link rel="stylesheet" href="../css/etalage.css">
+<script src="../js/jquery.etalage.min.js"></script>
 <script>
 			jQuery(document).ready(function($){
 
@@ -37,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			});
 		</script>
-<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script src="../js/easyResponsiveTabs.js" type="text/javascript"></script>
 		    <script type="text/javascript">
 			    $(document).ready(function () {
 			        $('#horizontalTab').easyResponsiveTabs({
@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ul class="shopping_grid">
 			      <a href="register.php"><li>Resgister</li></a>
 			      <a href="login.php"><li>Login</li></a>
-			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -76,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="special.php" data-hover="Events">Events</a></li>
 					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
 				 </ul>
-				 <script type="text/javascript" src="js/nav.js"></script>
+				 <script type="text/javascript" src="../js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
@@ -110,7 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             }
                                         while ($row = mysqli_fetch_array($result)) {
                                     ?>
-                                <li class="item1"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/><?php echo $row["type"]; ?></a>
+                                <li class="item1"><a href="#"><img class="arrow-img" src="../images/f_menu.png" alt=""/><?php echo $row["type"]; ?></a>
                                     <ul class="cute">
 						                <li class="subitem1"><a href="product.php"><?php echo $row["name"]; ?></a></li>
 					</ul>
@@ -147,25 +147,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	   <div class="col-md-9 single_right">
 	   	<div class="single_top">
 	       <div class="single_grid">
-				<div class="grid images_3_of_2">
+				<div class="grid ../images_3_of_2">
 						<ul id="etalage">
 							<li>
 								<a href="optionallink.php">
-									<img class="etalage_thumb_image" src='images/Long%20skirt.JPG' class="img-responsive" />
-									<img class="etalage_source_image" src="images/Long%20skirt.JPG" class="img-responsive" title="" />
+									<img class="etalage_thumb_image" src='../images/Long%20skirt.JPG' class="img-responsive" />
+									<img class="etalage_source_image" src="../images/Long%20skirt.JPG" class="img-responsive" title="" />
 								</a>
 							</li>
 							<li>
-								<img class="etalage_thumb_image" src="images/Long%20skirt2.JPG" class="img-responsive" />
-								<img class="etalage_source_image" src="images/Long%20skirt2.JPG" class="img-responsive" title="" />
+								<img class="etalage_thumb_image" src="../images/Long%20skirt2.JPG" class="img-responsive" />
+								<img class="etalage_source_image" src="../images/Long%20skirt2.JPG" class="img-responsive" title="" />
 							</li>
 							<li>
-								<img class="etalage_thumb_image" src="images/Long%20sleeve.JPG" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/Long%20sleeve.JPG"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="../images/Long%20sleeve.JPG" class="img-responsive"  />
+								<img class="etalage_source_image" src="../images/Long%20sleeve.JPG"class="img-responsive"  />
 							</li>
 						    <li>
-								<img class="etalage_thumb_image" src="images/shirt.JPG" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/shirt.JPG"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="../images/shirt.JPG" class="img-responsive"  />
+								<img class="etalage_source_image" src="../images/shirt.JPG"class="img-responsive"  />
 							</li>
 						</ul>
 						 <div class="clearfix"></div>		
@@ -235,9 +235,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="facts">
 									  <ul class="tab_list">
 									  	<li><a href="#"></a></li>
-									  	<li><a href="#"><img src="images/skirt1.jpg"></a></li>
-									  	<li><a href="#"><img src="images/skirt2.jpg"></a></li>
-									  	<li><a href="#"><img src="images/skirt3.jpg"></a></li>
+									  	<li><a href="#"><img src="../images/skirt1.jpg"></a></li>
+									  	<li><a href="#"><img src="../images/skirt2.jpg"></a></li>
+									  	<li><a href="#"><img src="../images/skirt3.jpg"></a></li>
 									  </ul>           
 							        </div>
 							     </div>	
@@ -275,7 +275,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  </div>
 		<h3 class="single_head">Guess You Like</h3>	
 	    <div class="related_products">
-	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="login/single.php">
 <div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -302,7 +302,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	     </a></div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	    <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -329,7 +329,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -359,7 +359,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	     <div class="clearfix"> </div>
 	    </div> 
 	    <div class="top_grid2">
-	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1 top_grid2-box2"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -386,7 +386,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	    </a> </div>
-	    <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	    <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
@@ -413,7 +413,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   mysqli_free_result($result);
                         ?>
 	     </a></div>
-	     <div class="col-md-4 top_grid1-box1"><a href="single.php">
+	     <div class="col-md-4 top_grid1-box1"><a href="login/single.php">
 	     	<div class="grid_1">
             <?php
                $query = "SELECT p_name, p_price, photo ";
