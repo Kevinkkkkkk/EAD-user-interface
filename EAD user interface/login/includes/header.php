@@ -54,7 +54,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 }
-?>                <a href="loguot.php"><li>Log out</li></a>
+?>                <a href="../login/logout.php"><li>Log out</li></a>
 			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>

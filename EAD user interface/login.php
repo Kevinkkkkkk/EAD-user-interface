@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
             session_start();
             $_SESSION['login_id'] = $row['u_id'];
             $_SESSION['login_user'] = $username;
-            header('Location: index.php ');
+            header('Location: login/index.php ');
             
         } else {
             echo "Login failed";
