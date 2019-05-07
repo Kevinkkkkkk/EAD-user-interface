@@ -58,7 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<ul class="shopping_grid">
 			      <a href="login.php"><li>Sign in</li></a>
-			      <a href="login.php"><li>Manager Only</li></a>
+			      <a href="login/login.php"><li>Manager Only</li></a>
 			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>

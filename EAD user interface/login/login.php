@@ -1,5 +1,50 @@
 <?php
 require_once('includes/db.php');
+
+if (isset($_POST['submit'])) {
+    if (empty($_POST['u_name']) || empty($_POST['u_password'])) {
+        $error = "usename or password is empty";
+    } else {
+        $username = $_POST['u_name'];
+        $password = $_POST['u_password'];
+        
+        $query  = "SELECT s_id, s_l_name, s_password, level ";
+        $query .= "FROM staff_information ";
+        $query .= "WHERE u_name = '$username' AND u_password = '$password' ";
+        
+        
+        $result = mysqli_query($connection, $query);
+        
+        if (!$result) {
+            die("query is wrong");
+        }
+        
+        //save data to $row
+        $row = mysqli_fetch_array($result);
+        
+        $numrows=mysqli_num_rows($result);
+        if ($numrows == 1) {
+            session_start();
+            $_SESSION['login_id'] = $row['s_id'];
+            $_SESSION['login_user'] = $username;
+            $_SESSION['login_level'] = $row['s_id'];
+            header('Location: login/index.php ');
+            
+        } else {
+            echo "Login failed";
+        }
+        
+        mysqli_free_result($result);
+    }
+}
+
+?>
+
+<?php
+if (isset($error)) {
+    echo "<span>" . $error ."</span>";
+}
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -40,27 +85,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li>Zura Women’s Online Store</li>
 			</div>
 			<ul class="shopping_grid">
-			      <a href="register.php"><li>Sign up</li></a>
-			      <a href="login.php"><li>Manager Only</li></a>
-			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
+                <a onclick="location.href='javascript:history.go(-1);'" value="Back"><li>Back</li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
 		</div>
 	</div>
-	<div class="h_menu4"><!-- start h_menu4 -->
-		<div class="container">
-				<a class="toggleMenu" href="index.php">Menu</a>
-				<ul class="nav">
-					<li><a href="index.php" data-hover="Index">Index</a></li>
-					<li><a href="all.php" data-hover="All products">All products</a></li>
-					<li><a href="hot.php" data-hover="Hot products">Hot products</a></li>
-					<li><a href="special.php" data-hover="Events">Events</a></li>
-					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
-				 </ul>
-				 <script type="text/javascript" src="../js/nav.js"></script>
-	      </div><!-- end h_menu4 -->
-     </div>
 </div>
 </body>
 <div class="about">
@@ -73,17 +103,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   </div>
 			   <div class="col-md-6 login-right">
 			  	<h3>Sign in</h3>
-				<form>
+				<form action="" method="POST">
 				  <div>
-					<span>Email/Username/Verified phone<label>*</label></span>
-					<input type="text">
+					<span>Email/Username/Verified phone<label>
+                        </label></span><input type="text" name="s_l_name">
+					
 				  </div>
 				  <div>
-					<span>Password<label>*</label></span>
-					<input type="text">
+					<span>Password<label>*</label></span><input type="password" name="s_password">
+					
 				  </div>
-				  <a class="forgot" href="#">Forgot password?</a>
-				  <input type="submit" value="Sign in">
+				  <input type="submit" name="submit" value="Sign In">
 			    </form>
 			   </div>
 			   <div class="clearfix"> </div>
