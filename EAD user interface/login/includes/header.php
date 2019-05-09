@@ -1,6 +1,8 @@
 <?php
 require_once('db.php');
 session_start();
+   
+
 ?>
 <html>
 <head>
@@ -41,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<ul class="shopping_grid">
                 <?php
-                            $query = "SELECT u_name ";
+                            $query = "SELECT * ";
                             $query .= "FROM user_information WHERE u_id = '$_SESSION[login_id]' ";
                             $result = mysqli_query($connection, $query);
                                 if (!$result) {
@@ -55,9 +57,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 }
 ?>
-                  <a href="login.php">Manager only</a>
+                  
                   <a href="../login/logout.php"><li>Log out</li></a>
-			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
+                  <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
@@ -72,6 +74,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="hot.php" data-hover="Hot products">Hot products</a></li>
 					<li><a href="special.php" data-hover="Events">Events</a></li>
 					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
+                    <li><?php echo "<a href='updateCustomer.php?u_id=" . $_SESSION['login_id'] .
+		    "'>Change</a>";?></li>
 				 </ul>
 				 <script type="text/javascript" src="../js/nav.js"></script>
 	      </div><!-- end h_menu4 -->

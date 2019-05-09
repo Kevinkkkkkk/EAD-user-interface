@@ -105,7 +105,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -132,7 +132,7 @@ require_once('includes/header.php');
                    while ($row = mysqli_fetch_array($result)) {
                ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -159,7 +159,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -189,7 +189,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -216,7 +216,7 @@ require_once('includes/header.php');
                    while ($row = mysqli_fetch_array($result)) {
                ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -243,7 +243,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -273,7 +273,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -300,7 +300,7 @@ require_once('includes/header.php');
                    while ($row = mysqli_fetch_array($result)) {
                ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -327,7 +327,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -358,7 +358,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -385,7 +385,7 @@ require_once('includes/header.php');
                    while ($row = mysqli_fetch_array($result)) {
                ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -412,7 +412,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -442,7 +442,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -469,7 +469,7 @@ require_once('includes/header.php');
                    while ($row = mysqli_fetch_array($result)) {
                ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -496,7 +496,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -526,7 +526,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -553,7 +553,7 @@ require_once('includes/header.php');
                    while ($row = mysqli_fetch_array($result)) {
                ?>  
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -580,7 +580,7 @@ require_once('includes/header.php');
 	      <div class="col-md-4 box_2"><a href="single.php">
 	     	<div class="grid_1">
 	     	  <div class="b-link-stroke b-animate-go  thickbox">
-		        <img src=" <?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
+		        <img src=" ../<?php echo $row["photo"] ?>" class="img-responsive" alt=""/> </div>
 	     	  <div class="grid_2">
 	     	  	<p><?php echo $row["p_name"] ?></p>
 	     	  	<ul class="grid_2-bottom">
@@ -600,4 +600,5 @@ require_once('includes/header.php');
 <?php
     require_once('includes/footer.php');
 ?>
+        
 </html>
