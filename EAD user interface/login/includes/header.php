@@ -52,7 +52,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ?>
 <?php    // 3.use/show data, as rows of the table (php & HTML mixed)
                                     while ($row = mysqli_fetch_array($result)) {
-                                        echo "<li>Hello, " . $row["u_name"] . "<li>";
+                                        echo "<li><a href='updateCustomer.php?u_id=' " . $_SESSION['login_id'] .
+		    "'>Hello, " . $row["u_name"] . "</li></a>";
 
 
 }
@@ -74,8 +75,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="hot.php" data-hover="Hot products">Hot products</a></li>
 					<li><a href="special.php" data-hover="Events">Events</a></li>
 					<li><a href="contact.php" data-hover="Contact us">Contact us</a></li>
-                    <li><?php echo "<a href='updateCustomer.php?u_id=" . $_SESSION['login_id'] .
-		    "'>Change</a>";?></li>
 				 </ul>
 				 <script type="text/javascript" src="../js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
