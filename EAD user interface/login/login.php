@@ -2,16 +2,16 @@
 require_once('includes/db.php');
 
 if (isset($_POST['submit'])) {
-    if (empty($_POST['u_name']) || empty($_POST['u_password'])) {
+    if (empty($_POST['s_id']) || empty($_POST['s_password'])) {
         $error = "usename or password is empty";
     } else {
-        $username = $_POST['u_name'];
-        $password = $_POST['u_password'];
+        $username = $_POST['s_id'];
+        $password = $_POST['s_password'];
         
-        $query  = "SELECT s_id, s_l_name, s_password, level ";
+        $query  = "SELECT s_id, s_f_name, s_l_name, s_password, s_level ";
         $query .= "FROM staff_information ";
-        $query .= "WHERE u_name = '$username' AND u_password = '$password' ";
-        
+        $query .= "WHERE s_id = '$username' AND s_password = '$password' ";
+        echo $query;
         
         $result = mysqli_query($connection, $query);
         
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['login_id'] = $row['s_id'];
             $_SESSION['login_user'] = $username;
             $_SESSION['login_level'] = $row['s_id'];
-            header('Location: login/index.php ');
+            header('Location: ../../../EAD-Management system/index.php ');
             
         } else {
             echo "Login failed";
@@ -106,7 +106,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<form action="" method="POST">
 				  <div>
 					<span>Email/Username/Verified phone<label>
-                        </label></span><input type="text" name="s_l_name">
+                        </label></span><input type="text" name="s_id">
 					
 				  </div>
 				  <div>
@@ -123,5 +123,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <?php
     require_once('includes/footer.php');
 ?>
-</body>
+
 </html>
