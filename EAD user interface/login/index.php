@@ -7,13 +7,13 @@ require_once('includes/header.php');
 <div class="slider">
 	  <div class="callbacks_container">
 	      <ul class="rslides" id="slider">
-	        <li><a href="single.php"><img src="images/slider1.jpg" class="img-responsive" alt=""/></a>
+	        <li><a href="single.php"><img src="../images/slider1.jpg" class="img-responsive" alt=""/></a>
 	         <div class="banner_desc">
 				<h1></h1>
 				<h2></h2>
 			 </div>
 	        </li>
-              <li><a href=single.php><img src="images/slider2.jpg" class="img-responsive" alt=""/></a>
+              <li><a href=single.php><img src="../images/slider2.jpg" class="img-responsive" alt=""/></a>
 	          <div class="banner_desc">
 				<h1></h1>
 				<h2></h2>
@@ -52,7 +52,7 @@ require_once('includes/header.php');
                                             }
                                         while ($row = mysqli_fetch_array($result)) {
                                     ?>
-                                <li class="item1"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/><?php echo $row["type"]; ?></a>
+                                <li class="item1"><a href="#"><img class="arrow-img" src="../images/f_menu.png" alt=""/><?php echo $row["type"]; ?></a>
                                     <ul class="cute">
 						                <li class="subitem1"><a href="product.php"><?php echo $row["name"]; ?></a></li>
 					</ul>
@@ -86,7 +86,7 @@ require_once('includes/header.php');
 		</script>
        </div>
 		    <div class="delivery" style="position: relative;">
-				<img src="images/delivery.jpg" class="img-responsive" alt=""/>
+				<img src="../images/delivery.jpg" class="img-responsive" alt=""/>
 				<h3>Online&nbsp;</h3>
 				<h4>Services</h4>
 			</div>		

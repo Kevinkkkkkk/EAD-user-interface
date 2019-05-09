@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
         $numrows=mysqli_num_rows($result);
         if ($numrows == 1) {
             session_start();
-            
+            $_SESSION['login_id'] = $row['u_id'];
             $_SESSION['login_user'] = $username;
             header('Location: login/index.php ');
             
@@ -45,7 +45,6 @@ if (isset($error)) {
 }
 
 ?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -86,7 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<ul class="shopping_grid">
 			      <a href="register.php"><li>Sign up</li></a>
-			      <a href="login.php"><li>Manager Only</li></a>
+			      <a href="login/login.php"><li>Manager Only</li></a>
 			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>

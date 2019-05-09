@@ -1,5 +1,6 @@
 <?php
 require_once('db.php');
+session_start();
 ?>
 <html>
 <head>
@@ -41,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ul class="shopping_grid">
                 <?php
                             $query = "SELECT u_name ";
-                            $query .= "FROM user_information WHERE u_id = $_SESSION[login_id]";
+                            $query .= "FROM user_information WHERE u_id = '$_SESSION[login_id]' ";
                             $result = mysqli_query($connection, $query);
                                 if (!$result) {
                                     die("query is wrong");
@@ -49,12 +50,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ?>
 <?php    // 3.use/show data, as rows of the table (php & HTML mixed)
                                     while ($row = mysqli_fetch_array($result)) {
-                                        echo "<li>" . $row["u_name"] . "<li>";
+                                        echo "<li>Hello, " . $row["u_name"] . "<li>";
 
 
 }
 ?>
-			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+                  <a href="login.php">Manager only</a>
+                  <a href="../login/logout.php"><li>Log out</li></a>
+			      <a href="purchase.php"><li><span class="m_1">Shopping cart</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
 			      <div class="clearfix"> </div>
 			</ul>
 		    <div class="clearfix"> </div>
