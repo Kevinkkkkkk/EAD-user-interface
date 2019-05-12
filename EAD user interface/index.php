@@ -44,7 +44,7 @@ require_once('includes/header.php');
 		    <h3 class="menu_head">Classification of goods</h3>
 			  <ul class="menu">
                   <?php
-                                    $query = "SELECT (SELECT group_concat(DISTINCT product.p_name) FROM product WHERE product.i_id = inventory.i_id) AS name, inventory.type as type ";
+                                    $query = "SELECT (SELECT group_concat(DISTINCT product.p_name SEPARATOR '/') FROM product WHERE product.i_id = inventory.i_id) AS name, inventory.type as type ";
                                     $query .= "FROM product LEFT JOIN inventory ON product.i_id = inventory.i_id GROUP BY inventory.i_id";
                                     $result = mysqli_query($connection, $query);
                                     if (!$result) {

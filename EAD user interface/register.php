@@ -187,19 +187,6 @@ $(this).siblings("span").show();
 				</form>
 				<div class="clearfix"> </div>
 				<div class="register-but">
-
-<form action="register.php" method="post">
-
-    Username:<br>
-    <input type="varchar" name="u_name" style="width:520px" ><br>
-    Password:<br>
-    <input type="varchar" name="u_password" style="width:520px"><br>
-    Telephone Number:<br>
-    <input type="varchar" name="u_telephone" style="width:520px"><br>
-
-
-    <br><input type="submit" name="submit" value="Submit">
-</form>
 				</div>
 		   </div>
 	</div>
