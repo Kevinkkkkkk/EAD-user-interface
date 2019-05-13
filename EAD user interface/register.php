@@ -188,6 +188,12 @@ $(this).siblings("span").show();
 				<div class="clearfix"> </div>
 				<div class="register-but">
 				</div>
+          				<div class="register-but">
+				   <form>
+					   <input type="submit" value="Sign up">
+					   <div class="clearfix"> </div>
+				   </form>
+				</div>
 		   </div>
 	</div>
 </div>
