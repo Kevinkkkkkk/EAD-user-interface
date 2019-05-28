@@ -96,6 +96,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="main">
   <div class="content_top">
   	<div class="container">
+                                <div class="wrap" style="margin-top:20px;"><div id="control_eda1ebfe-e449-4f2c-85c6-50191aca18dd" class="control_goodscondition"><div class="condition">
+    Current Position:&nbsp;&nbsp; <a href="index.php"> Index </a><span>&gt;</span>
+<a href="javascript:;" onclick="return false">Products Information</a></div></div></div>
+	  <div class="clearfix"> </div>
 	   <div class="col-md-3 sidebar_box">
 	   	 <div class="sidebar">
 			<div class="menu_box">
