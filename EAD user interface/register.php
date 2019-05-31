@@ -83,16 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="container">
       <div class="register">
 		  	  <form id="form1" name="form1" method="post" onsubmit="return checkForm()">
-				 <div class="register-top-grid">
-					 <div>
-						<span>Email/Username<label>*</label></span>
-						<input type="text" name="u_name">
-					 </div>
-					 <div>
-						 <span>Mobile number<label>*</label></span>
-						 <input type="text" name="u_telephone" oninput="value=value.replace(/[^\d]/g,'')">
-					 </div>
-					 </div>
+				 
 <script language="javascript" type="text/javascript">
 function checkForm(){
 var u_password = document.getElementById("u_password");
@@ -166,17 +157,7 @@ $(this).siblings("span").show();
 
 })
 </script>
-				     <div class="register-bottom-grid" name="form1">
-							 <div>
-								<span>Password<label>*</label></span>
-								<input name="u_password" type="password" id="u_password" onblur="checkInput(this,'password')"/>
-							 </div>
-							 <div>
-								<span>Confirm Password<label>*</label></span>
-								<input name="u_password2" type="password" id="u_password2" onblur="checkInput(this,'confirm password')" />
-							 </div>
-							 <div class="clearfix"> </div>
-					 </div>
+				     
                   		<div class="clearfix"> </div>
 				<div>
                     <input type="checkbox" name="checkbox" checked="">

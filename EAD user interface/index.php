@@ -54,7 +54,7 @@ require_once('includes/header.php');
                                     ?>
                                 <li class="item1"><a href="#"><img class="arrow-img" src="images/f_menu.png" alt=""/><?php echo $row["type"]; ?></a>
                                     <ul class="cute">
-						                <li class="subitem1"><a href="product.php"><?php echo $row["name"]; ?></a></li>
+						                <li class="subitem1"><a href="login.php"><?php echo $row["name"]; ?></a></li>
 					</ul>
                 </li>
 <?php
