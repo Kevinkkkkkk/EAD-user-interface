@@ -164,7 +164,17 @@ $(this).siblings("span").show();
 
 })
 </script>
-
+				     <div class="register-bottom-grid" name="form1">
+							 <div>
+								<span>Password<label>*</label></span>
+								<input name="u_password" type="password" id="u_password" onblur="checkInput(this,'password')"/>
+							 </div>
+							 <div>
+								<span>Confirm Password<label>*</label></span>
+								<input name="u_password2" type="password" id="u_password2" onblur="checkInput(this,'confirm password')" />
+							 </div>
+							 <div class="clearfix"> </div>
+					 </div>
                   		<div class="clearfix"> </div>
 				<div>
                     <input type="checkbox" name="checkbox" checked="">

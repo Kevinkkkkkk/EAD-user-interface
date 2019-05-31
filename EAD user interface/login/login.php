@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
         $query  = "SELECT s_id, s_f_name, s_l_name, s_password, s_level ";
         $query .= "FROM staff_information ";
         $query .= "WHERE s_id = '$username' AND s_password = '$password' ";
-        //echo $query;
+        echo $query;
         
         $result = mysqli_query($connection, $query);
         
