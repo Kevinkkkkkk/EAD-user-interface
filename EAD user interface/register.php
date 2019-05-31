@@ -10,7 +10,7 @@ if(isset($_POST['submit'])) {
 $query = "INSERT INTO user_information  ( u_name, u_telephone, u_password ) ";
 $query .= "VALUES ( '$u_name', '$u_telephone', '$u_password' ) ";
 mysqli_query($connection, $query);
-header('Location:login.php ');
+echo $query;
 }
 
 
@@ -182,13 +182,16 @@ $(this).siblings("span").show();
                     <label >I have read and agree to</label>
                     <a class="news-letter" href="#"> Zura's Conditions of Use and Privacy Policy.</a>
                 </div>
-
+				
 				<div class="clearfix"> </div>
+				<div class="register-but">
+          		<div class="register-but">
 				   <form>
 					   <input name="submit" type="submit" value="Sign up">
 					   <div class="clearfix"> </div>
-				   </form>
-          </form>
+                    </form>
+				</div>
+				</div></form>
 		   </div>
 	</div>
 </div>
