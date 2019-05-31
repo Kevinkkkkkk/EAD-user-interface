@@ -1,18 +1,16 @@
 <?php
 require_once('includes/db.php');
-
 if(isset($_POST['submit'])) {
-    $u_id = $_POST['u_id'];
     $u_name = $_POST['u_name'];
     $u_password = $_POST['u_password'];
     $u_telephone = $_POST['u_telephone'];
 
 //2. Do a query
 
-$query = "INSERT INTO user_information  ( u_name, u_password, u_telephone ) ";
-$query .= "VALUES ( '$u_name', '$u_password', '$u_telephone' ) ";
+$query = "INSERT INTO user_information  ( u_name, u_telephone, u_password ) ";
+$query .= "VALUES ( '$u_name', '$u_telephone', '$u_password' ) ";
 mysqli_query($connection, $query);
-header('location: login.php');
+header('Location:login.php ');
 }
 
 
@@ -82,7 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="about">
   <div class="container">
       <div class="register">
-		  	  <form id="form1" name="form1" method="post" onsubmit="return checkForm()">
+		  	  <form id="form1" name="form1" method="POST" onsubmit="return checkForm()">
 				 <div class="register-top-grid">
 					 <div>
 						<span>Email/Username<label>*</label></span>
@@ -186,15 +184,11 @@ $(this).siblings("span").show();
                 </div>
 
 				<div class="clearfix"> </div>
-				<div class="register-but">
-          		<div class="register-but">
-<form>
+				   <form>
 					   <input name="submit" type="submit" value="Sign up">
 					   <div class="clearfix"> </div>
 				   </form>
-				</div>
-				</div>
-               </form>   
+          </form>
 		   </div>
 	</div>
 </div>
